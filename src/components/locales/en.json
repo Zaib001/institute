@@ -1,0 +1,165 @@
+{
+    "navbar": {
+      "links": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "courses": "Courses",
+        "contact_us": "Contact Us",
+        "curriculum": "Curriculum"
+      },
+      "language": "Select Language",
+      "user_menu": {
+        "student_dashboard": "Student Dashboard",
+        "admin_dashboard": "Admin Dashboard",
+        "logout": "Logout",
+        "sign_in": "Sign In",
+        "sign_up": "Sign Up"
+      }
+      
+    },
+    "hero_section": {
+    "title": "Jolie Institute",
+    "subtitle": "Sterile Processing Excellence",
+    "description": "Train for a Vital Healthcare Role Behind the Scenes, Ensuring Safety and Sterility in Patient Care",
+    "cta": "Book Your Appointment"
+  },
+  "video_section": {
+    "heading": "Welcome to Jolie Institute!",
+    "description": "Where your journey to becoming a skilled Central Service Processing Technician begins, at Jolie Institute, we’re dedicated to equipping you with the knowledge and hands-on experience needed to excel in a critical, behind-the-scenes healthcare role. Join us and step into a career that ensures the safety and care of patients, one sterilized instrument at a time."
+  },
+  "featured_courses": {
+    "title": "Featured Courses",
+    "lessons": "Lessons",
+    "duration": "Duration"
+  },
+  "testimonials_section": {
+    "title": "Customer Reviews",
+    "subtitle": "Here's what our customers have to say:",
+    "no_reviews": "No reviews available."
+  },
+  "latest_news_section": {
+    "title": "Latest News",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "view_all_news": "View All News",
+    "category": "Category",
+    "description": "Description",
+    "date": "Date"
+  },
+  "blog_section": {
+    "title": "Our Latest Blogs",
+    "category": "Category",
+    "read_more": "Read more",
+    "tags": "Tags"
+  },
+  "footer": {
+  "title": "Jolie Institute",
+  "address": {
+    "line1": "Whitney Square, North Loop",
+    "line2": "211 Washington Ave N #120",
+    "city_state_zip": "Minneapolis, MN 55401",
+    "phone": "(817) 774-6555",
+    "map_directions": "MAP / DIRECTIONS"
+  },
+  "sitemap": {
+    "title": "SITEMAP",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "courses": "Courses",
+      "curriculum": "Curriculum",
+      "contact_us": "Contact Us"
+    }
+  },
+  "newsletter": {
+    "title": "WANT OUR BEST COURSES?",
+    "description": "We send out our best courses in a 1x-weekly newsletter. Only value.",
+    "placeholder": "Your Email",
+    "button": "SIGN UP"
+  },
+  "bottom": {
+    "text": "&copy; 2024 Jolie Institute. All rights reserved.",
+    "privacy": "Privacy"
+  }
+},
+"about_us": {
+    "header": "About Us",
+    "mission_vision": {
+      "title": "How It Started",
+      "subtitle": "Our Dream is Global Learning Transformation",
+      "description": "KawnAh was founded by Robert Anderson, a passionate lifelong learner, and Maria Sanchez, a visionary educator. Their shared dream was to create a digital haven of knowledge accessible to all. Untied by their belief in the transformational power of education, they embarked on a journey to build KawnAh. With relentless dedication, they gathered a team of experts and launched this innovative platform, creating a global community of eager learners, all connected by the desire to explore, learn, and grow."
+    },
+    "team_members": {
+      "title": "Meet Our Team",
+      "members": {
+        "robert_anderson": {
+          "name": "Robert Anderson",
+          "role": "Founder & CEO"
+        },
+        "maria_sanchez": {
+          "name": "Maria Sanchez",
+          "role": "Co-Founder & Educator"
+        },
+        "john_doe": {
+          "name": "John Doe",
+          "role": "Technical Lead"
+        }
+      }
+    }
+  },
+  "service_header": {
+    "title": "Services"
+  },
+  "consultation_booking": {
+    "header": "Book a Consultation",
+    "subtitle": "Schedule a demo or consultation session with our experts.",
+    "form": {
+      "name_label": "Full Name",
+      "name_placeholder": "Enter your full name",
+      "email_label": "Email Address",
+      "email_placeholder": "Enter your email address",
+      "date_label": "Select Date & Time",
+      "message_label": "Message (Optional)",
+      "message_placeholder": "Any specific details or questions?",
+      "button": "Schedule Consultation",
+      "submitting": "Submitting..."
+    },
+    "success_message": "Consultation booked successfully!",
+    "error_message": "Failed to book consultation."
+  },
+  "courses_page": {
+    "header": "Courses & Exam",
+    "title": "Courses & Exams",
+    "loading": "Loading courses...",
+    "error": "Failed to load courses. Please try again later.",
+    "price": "Price:"
+  },
+  "curriculum_section": {
+    "title": "Curriculum & Resources",
+    "loading": "Loading curriculum resources...",
+    "error": "Failed to load curriculum resources.",
+    "no_resources": "No curriculum resources available at the moment.",
+    "download_button": "Download PDF"
+  },
+  "contact_us": {
+    "header": "Contact Us",
+    "title": "Contact Us",
+    "subtitle": "We would love to hear from you. Please reach out with any questions or feedback!",
+    "form": {
+      "title": "Get in Touch",
+      "name_placeholder": "Your Name",
+      "email_placeholder": "Your Email",
+      "message_placeholder": "Your Message",
+      "submit_button": "Send Message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "123 Main Street, City, State, Zip Code",
+      "phone": "+1 (123) 456-7890",
+      "email": "contact@yourdomain.com"
+    }
+  }
+
+  }
+  

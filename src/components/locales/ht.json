@@ -1,0 +1,162 @@
+{
+  "navbar": {
+    "links": {
+      "home": "Akèy",
+      "about": "Sou nou",
+      "services": "Sèvis yo",
+      "courses": "Kou yo",
+      "contact_us": "Kontakte nou",
+      "curriculum": "Pwogram"
+    },
+    "language": "Chwazi Lang",
+    "user_menu": {
+      "student_dashboard": "Panèl elèv",
+      "admin_dashboard": "Panèl administratè",
+      "logout": "Dekonekte",
+      "sign_in": "Ouvri sesyon an",
+      "sign_up": "Enskri"
+    }
+  },
+  "hero_section": {
+      "title": "Enstiti Jolie",
+      "subtitle": "Ekselans nan pwosesis esteril",
+      "description": "Fòmasyon pou yon wòl esansyèl nan swen sante nan sèn yo, asire sekirite ak esterilite nan swen pasyan",
+      "cta": "Rezève Randevou ou"
+    },
+    "video_section": {
+        "heading": "Byenveni nan Jolie Institute!",
+        "description": "Kote vwayaj ou pou vin yon teknisyen kalifye nan Sèvis Santral kòmanse, nan Jolie Institute, nou dedye a ba ou konesans ak eksperyans pratik ki nesesè pou briye nan yon wòl kritik, dèyè sèn nan nan swen sante. Rantre nan nou epi antre nan yon karyè ki asire sekirite ak swen pou pasyan yo, yon enstriman esterilize nan yon moman."
+      },
+      "featured_courses": {
+    "title": "Kou an dekapotab",
+    "lessons": "Leson yo",
+    "duration": "Dire"
+  },
+  "testimonials_section": {
+    "title": "Revizyon Kliyan yo",
+    "subtitle": "Men sa kliyan nou yo di :",
+    "no_reviews": "Pa gen revizyon disponib."
+  },
+  "latest_news_section": {
+    "title": "Dènye Nouvèl yo",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "view_all_news": "Gade tout nouvèl yo",
+    "category": "Kategori",
+    "description": "Deskripsyon",
+    "date": "Dat"
+  },
+  "blog_section": {
+    "title": "Dènye Blog Nou yo",
+    "category": "Kategori",
+    "read_more": "Li plis",
+    "tags": "Tags"
+  },
+  "footer": {
+    "title": "Enstiti Jolie",
+    "address": {
+      "line1": "Whitney Square, North Loop",
+      "line2": "211 Washington Ave N #120",
+      "city_state_zip": "Minneapolis, MN 55401",
+      "phone": "(817) 774-6555",
+      "map_directions": "KAT / DIREKSYON"
+    },
+    "sitemap": {
+      "title": "PLAN SIT",
+      "links": {
+        "home": "Akèy",
+        "about": "Sou nou",
+        "services": "Sèvis",
+        "courses": "Kou",
+        "curriculum": "Pwogram",
+        "contact_us": "Kontakte nou"
+      }
+    },
+    "newsletter": {
+      "title": "VLE PI BON KOU NOU YO?",
+      "description": "Nou voye pi bon kou nou yo nan yon bilten chak semèn. Se sèlman valè.",
+      "placeholder": "Imèl ou",
+      "button": "ENSKRI"
+    },
+    "bottom": {
+      "text": "&copy; 2024 Enstiti Jolie. Tout dwa rezève.",
+      "privacy": "Enfòmasyon prive"
+    }
+  },
+  "about_us": {
+    "header": "Sou nou",
+    "mission_vision": {
+      "title": "Kòman li te kòmanse",
+      "subtitle": "Rèv nou se transfòmasyon aprantisaj mondyal",
+      "description": "KawnAh te fonde pa Robert Anderson, yon elèv pasyone pou tout lavi, ak Maria Sanchez, yon edikatè vizyonè. Rèv yo te fè ansanm se te kreye yon kote dijital konesans ki aksesib pou tout moun. Uni pa kwayans yo nan pouvwa edikasyon transfòmatè, yo te lanse nan yon vwayaj pou konstwi KawnAh. Avèk yon devouman san rete, yo te rasanble yon ekip ekspè epi yo te lanse platfòm inovatè sa a, kreye yon kominote mondyal aprenan ki anvi, tout konekte pa dezi pou eksplore, aprann, ak grandi."
+    },
+    "team_members": {
+      "title": "Rankontre Ekip Nou",
+      "members": {
+        "robert_anderson": {
+          "name": "Robert Anderson",
+          "role": "Fondatè & Direktè Jeneral"
+        },
+        "maria_sanchez": {
+          "name": "Maria Sanchez",
+          "role": "Ko-fondatè & Edikatè"
+        },
+        "john_doe": {
+          "name": "John Doe",
+          "role": "Lidè Teknik"
+        }
+      }
+    }
+  },
+  "service_header": {
+    "title": "Sèvis"
+  },
+  "consultation_booking": {
+    "header": "Rezève yon Konsiltasyon",
+    "subtitle": "Planifye yon demonstrasyon oswa yon sesyon konsiltasyon avèk ekspè nou yo.",
+    "form": {
+      "name_label": "Non konplè",
+      "name_placeholder": "Antre non konplè ou",
+      "email_label": "Adrès imel",
+      "email_placeholder": "Antre adrès imel ou",
+      "date_label": "Chwazi Dat ak Lè",
+      "message_label": "Mesaj (Si ou vle)",
+      "message_placeholder": "Nenpòt detay espesifik oswa kesyon?",
+      "button": "Planifye Konsiltasyon",
+      "submitting": "Ap voye..."
+    },
+    "success_message": "Konsiltasyon an rezève avèk siksè!",
+    "error_message": "Echwe pou rezève konsiltasyon."
+  },
+  "courses_page": {
+    "header": "Kou & Egzamen",
+    "title": "Kou & Egzamen",
+    "loading": "Chajman kou yo...",
+    "error": "Echèk chajman kou yo. Tanpri eseye ankò pita.",
+    "price": "Pri:"
+  },
+  "curriculum_section": {
+    "title": "Pwogram & Resous",
+    "loading": "Chaje resous pwogram yo...",
+    "error": "Echwe pou chaje resous pwogram yo.",
+    "no_resources": "Pa gen okenn resous pwogram ki disponib kounye a.",
+    "download_button": "Telechaje PDF"
+  },
+  "contact_us": {
+    "header": "Kontakte nou",
+    "title": "Kontakte nou",
+    "subtitle": "Nou ta renmen tande ou. Tanpri kontakte nou pou nenpòt kesyon oswa fidbak!",
+    "form": {
+      "title": "Kontakte nou",
+      "name_placeholder": "Non ou",
+      "email_placeholder": "Imèl ou",
+      "message_placeholder": "Mesaj ou",
+      "submit_button": "Voye mesaj"
+    },
+    "info": {
+      "title": "Enfòmasyon pou kontakte",
+      "address": "123 Main Street, Vil, Eta, Kòd Postal",
+      "phone": "+1 (123) 456-7890",
+      "email": "kontak@domenyou.com"
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+    "navbar": {
+      "links": {
+        "home": "Accueil",
+        "about": "À propos",
+        "services": "Services",
+        "courses": "Cours",
+        "contact_us": "Contactez-nous",
+        "curriculum": "Programme"
+      },
+      "language": "Choisir la langue",
+      "user_menu": {
+        "student_dashboard": "Tableau de bord étudiant",
+        "admin_dashboard": "Tableau de bord administrateur",
+        "logout": "Déconnexion",
+        "sign_in": "Connexion",
+        "sign_up": "Inscription"
+      }
+    },
+    "hero_section": {
+        "title": "Institut Jolie",
+        "subtitle": "Excellence en traitement stérile",
+        "description": "Formez-vous pour un rôle essentiel en soins de santé dans les coulisses, garantissant la sécurité et la stérilité des soins aux patients",
+        "cta": "Prenez rendez-vous"
+      },
+      "video_section": {
+    "heading": "Bienvenue à Jolie Institute!",
+    "description": "Où commence votre voyage pour devenir un technicien qualifié en traitement des services centraux, à Jolie Institute, nous nous consacrons à vous fournir les connaissances et l'expérience pratique nécessaires pour exceller dans un rôle critique dans les coulisses des soins de santé. Rejoignez-nous et embrassez une carrière qui garantit la sécurité et les soins des patients, un instrument stérilisé à la fois."
+  },
+  "featured_courses": {
+    "title": "Cours en vedette",
+    "lessons": "Leçons",
+    "duration": "Durée"
+  },
+  "testimonials_section": {
+    "title": "Avis des clients",
+    "subtitle": "Voici ce que nos clients disent :",
+    "no_reviews": "Aucun avis disponible."
+  },
+  "latest_news_section": {
+    "title": "Dernières nouvelles",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "view_all_news": "Voir toutes les nouvelles",
+    "category": "Catégorie",
+    "description": "Description",
+    "date": "Date"
+  },
+  "blog_section": {
+    "title": "Nos derniers blogs",
+    "category": "Catégorie",
+    "read_more": "En savoir plus",
+    "tags": "Étiquettes"
+  },
+  "footer": {
+    "title": "Institut Jolie",
+    "address": {
+      "line1": "Whitney Square, North Loop",
+      "line2": "211 Washington Ave N #120",
+      "city_state_zip": "Minneapolis, MN 55401",
+      "phone": "(817) 774-6555",
+      "map_directions": "CARTE / ITINÉRAIRES"
+    },
+    "sitemap": {
+      "title": "PLAN DU SITE",
+      "links": {
+        "home": "Accueil",
+        "about": "À propos",
+        "services": "Services",
+        "courses": "Cours",
+        "curriculum": "Programme",
+        "contact_us": "Nous contacter"
+      }
+    },
+    "newsletter": {
+      "title": "VOUS VOULEZ NOS MEILLEURS COURS?",
+      "description": "Nous envoyons nos meilleurs cours dans une newsletter hebdomadaire. Que de la valeur.",
+      "placeholder": "Votre e-mail",
+      "button": "S'INSCRIRE"
+    },
+    "bottom": {
+      "text": "&copy; 2024 Institut Jolie. Tous droits réservés.",
+      "privacy": "Confidentialité"
+    }
+  },
+  "about_us": {
+    "header": "À propos de nous",
+    "mission_vision": {
+      "title": "Comment tout a commencé",
+      "subtitle": "Notre rêve est la transformation de l'apprentissage mondial",
+      "description": "KawnAh a été fondé par Robert Anderson, un apprenant passionné à vie, et Maria Sanchez, une éducatrice visionnaire. Leur rêve commun était de créer un havre numérique de connaissances accessible à tous. Unis par leur croyance dans le pouvoir transformationnel de l'éducation, ils se sont lancés dans un voyage pour construire KawnAh. Avec un dévouement sans faille, ils ont réuni une équipe d'experts et lancé cette plateforme innovante, créant une communauté mondiale d'apprenants enthousiastes, tous connectés par le désir d'explorer, d'apprendre et de grandir."
+    },
+    "team_members": {
+      "title": "Rencontrez notre équipe",
+      "members": {
+        "robert_anderson": {
+          "name": "Robert Anderson",
+          "role": "Fondateur & PDG"
+        },
+        "maria_sanchez": {
+          "name": "Maria Sanchez",
+          "role": "Co-fondatrice & éducatrice"
+        },
+        "john_doe": {
+          "name": "John Doe",
+          "role": "Responsable technique"
+        }
+      }
+    }
+  },
+  "service_header": {
+    "title": "Services"
+  },
+  "consultation_booking": {
+    "header": "Réserver une consultation",
+    "subtitle": "Planifiez une démonstration ou une session de consultation avec nos experts.",
+    "form": {
+      "name_label": "Nom complet",
+      "name_placeholder": "Entrez votre nom complet",
+      "email_label": "Adresse e-mail",
+      "email_placeholder": "Entrez votre adresse e-mail",
+      "date_label": "Sélectionnez la date et l'heure",
+      "message_label": "Message (Optionnel)",
+      "message_placeholder": "Des détails ou des questions spécifiques ?",
+      "button": "Planifier une consultation",
+      "submitting": "Soumission en cours..."
+    },
+    "success_message": "Consultation réservée avec succès !",
+    "error_message": "Échec de la réservation de la consultation."
+  },
+  "courses_page": {
+    "header": "Cours & Examens",
+    "title": "Cours & Examens",
+    "loading": "Chargement des cours...",
+    "error": "Échec du chargement des cours. Veuillez réessayer plus tard.",
+    "price": "Prix :"
+  },
+  "curriculum_section": {
+    "title": "Programme & Ressources",
+    "loading": "Chargement des ressources du programme...",
+    "error": "Échec du chargement des ressources du programme.",
+    "no_resources": "Aucune ressource du programme n'est disponible pour le moment.",
+    "download_button": "Télécharger le PDF"
+  },
+  "contact_us": {
+    "header": "Contactez-nous",
+    "title": "Contactez-nous",
+    "subtitle": "Nous serions ravis de vous entendre. Veuillez nous contacter pour toute question ou commentaire !",
+    "form": {
+      "title": "Entrer en contact",
+      "name_placeholder": "Votre nom",
+      "email_placeholder": "Votre e-mail",
+      "message_placeholder": "Votre message",
+      "submit_button": "Envoyer le message"
+    },
+    "info": {
+      "title": "Informations de contact",
+      "address": "123 Rue Principale, Ville, État, Code Postal",
+      "phone": "+1 (123) 456-7890",
+      "email": "contact@votredomaine.com"
+    }
+  }
+  }
+  

@@ -1,0 +1,164 @@
+{
+    "navbar": {
+      "links": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "services": "Servicios",
+        "courses": "Cursos",
+        "contact_us": "Contáctenos",
+        "curriculum": "Plan de estudios"
+      },
+      "language": "Seleccionar idioma",
+      "user_menu": {
+        "student_dashboard": "Panel de estudiante",
+        "admin_dashboard": "Panel de administrador",
+        "logout": "Cerrar sesión",
+        "sign_in": "Iniciar sesión",
+        "sign_up": "Registrarse"
+      }
+      
+    },
+    "hero_section": {
+          "title": "Instituto Jolie",
+          "subtitle": "Excelencia en procesamiento estéril",
+          "description": "Entrénate para un papel vital en el cuidado de la salud detrás de escena, asegurando la seguridad y la esterilidad en el cuidado del paciente",
+          "cta": "Reserva tu cita"
+        },
+        "video_section": {
+    "heading": "¡Bienvenido a Jolie Institute!",
+    "description": "Donde comienza tu viaje para convertirte en un técnico calificado en procesamiento de servicios centrales, en Jolie Institute, estamos dedicados a brindarte el conocimiento y la experiencia práctica necesarios para sobresalir en un papel crítico detrás de escena en el cuidado de la salud. Únete a nosotros y da un paso hacia una carrera que garantiza la seguridad y el cuidado de los pacientes, un instrumento esterilizado a la vez."
+  },
+  "featured_courses": {
+    "title": "Cursos destacados",
+    "lessons": "Lecciones",
+    "duration": "Duración"
+  },
+  "testimonials_section": {
+    "title": "Opiniones de clientes",
+    "subtitle": "Esto es lo que nuestros clientes dicen:",
+    "no_reviews": "No hay opiniones disponibles."
+  },
+  "latest_news_section": {
+    "title": "Últimas noticias",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "view_all_news": "Ver todas las noticias",
+    "category": "Categoría",
+    "description": "Descripción",
+    "date": "Fecha"
+  },
+  "blog_section": {
+    "title": "Nuestros últimos blogs",
+    "category": "Categoría",
+    "read_more": "Leer más",
+    "tags": "Etiquetas"
+  },
+  "footer": {
+    "title": "Instituto Jolie",
+    "address": {
+      "line1": "Whitney Square, North Loop",
+      "line2": "211 Washington Ave N #120",
+      "city_state_zip": "Minneapolis, MN 55401",
+      "phone": "(817) 774-6555",
+      "map_directions": "MAPA / DIRECCIONES"
+    },
+    "sitemap": {
+      "title": "MAPA DEL SITIO",
+      "links": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "services": "Servicios",
+        "courses": "Cursos",
+        "curriculum": "Plan de estudios",
+        "contact_us": "Contáctenos"
+      }
+    },
+    "newsletter": {
+      "title": "¿QUIERES NUESTROS MEJORES CURSOS?",
+      "description": "Enviamos nuestros mejores cursos en un boletín semanal. Solo valor.",
+      "placeholder": "Tu correo electrónico",
+      "button": "REGÍSTRATE"
+    },
+    "bottom": {
+      "text": "&copy; 2024 Instituto Jolie. Todos los derechos reservados.",
+      "privacy": "Privacidad"
+    }
+  },
+  "about_us": {
+    "header": "Sobre Nosotros",
+    "mission_vision": {
+      "title": "Cómo comenzó",
+      "subtitle": "Nuestro sueño es la transformación global del aprendizaje",
+      "description": "KawnAh fue fundado por Robert Anderson, un apasionado aprendiz de toda la vida, y Maria Sanchez, una educadora visionaria. Su sueño compartido era crear un refugio digital de conocimiento accesible para todos. Unidos por su creencia en el poder transformador de la educación, emprendieron un viaje para construir KawnAh. Con una dedicación incansable, reunieron un equipo de expertos y lanzaron esta plataforma innovadora, creando una comunidad global de aprendices entusiastas, todos conectados por el deseo de explorar, aprender y crecer."
+    },
+    "team_members": {
+      "title": "Conoce a Nuestro Equipo",
+      "members": {
+        "robert_anderson": {
+          "name": "Robert Anderson",
+          "role": "Fundador y Director Ejecutivo"
+        },
+        "maria_sanchez": {
+          "name": "Maria Sanchez",
+          "role": "Cofundadora y Educadora"
+        },
+        "john_doe": {
+          "name": "John Doe",
+          "role": "Líder Técnico"
+        }
+      }
+    }
+  },
+  "service_header": {
+    "title": "Servicios"
+  },
+  "consultation_booking": {
+    "header": "Reservar una consulta",
+    "subtitle": "Programa una demostración o una sesión de consulta con nuestros expertos.",
+    "form": {
+      "name_label": "Nombre completo",
+      "name_placeholder": "Ingrese su nombre completo",
+      "email_label": "Dirección de correo electrónico",
+      "email_placeholder": "Ingrese su correo electrónico",
+      "date_label": "Seleccionar fecha y hora",
+      "message_label": "Mensaje (Opcional)",
+      "message_placeholder": "¿Algún detalle o pregunta específica?",
+      "button": "Programar consulta",
+      "submitting": "Enviando..."
+    },
+    "success_message": "Consulta reservada con éxito.",
+    "error_message": "No se pudo reservar la consulta."
+  },
+  "courses_page": {
+    "header": "Cursos y Exámenes",
+    "title": "Cursos y Exámenes",
+    "loading": "Cargando cursos...",
+    "error": "Error al cargar los cursos. Por favor, inténtelo de nuevo más tarde.",
+    "price": "Precio:"
+  },
+  "curriculum_section": {
+    "title": "Plan de Estudios y Recursos",
+    "loading": "Cargando recursos del plan de estudios...",
+    "error": "No se pudieron cargar los recursos del plan de estudios.",
+    "no_resources": "No hay recursos del plan de estudios disponibles en este momento.",
+    "download_button": "Descargar PDF"
+  },
+  "contact_us": {
+    "header": "Contáctenos",
+    "title": "Contáctenos",
+    "subtitle": "Nos encantaría saber de usted. ¡Por favor, contáctenos con cualquier pregunta o comentario!",
+    "form": {
+      "title": "Ponte en contacto",
+      "name_placeholder": "Tu nombre",
+      "email_placeholder": "Tu correo electrónico",
+      "message_placeholder": "Tu mensaje",
+      "submit_button": "Enviar mensaje"
+    },
+    "info": {
+      "title": "Información de contacto",
+      "address": "123 Calle Principal, Ciudad, Estado, Código Postal",
+      "phone": "+1 (123) 456-7890",
+      "email": "contacto@tudominio.com"
+    }
+  }
+  }
+  
