@@ -25,6 +25,7 @@
     "formik": "^2.4.5",
     "framer-motion": "^10.18.0",
     "gapi-script": "^1.2.0",
+    "gsap": "^3.13.0",
     "i18next": "^24.0.2",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^3.0.1",

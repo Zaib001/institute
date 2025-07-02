@@ -39,8 +39,7 @@ function App() {
 
   return (
     <>
-      {loading && <Loader />}
-      {shouldShowNavbarAndFooter && <Navbar />}
+          {shouldShowNavbarAndFooter && <Navbar />}
       <div>
         <Routes>
           <Route path="/" element={<HeaderPage />} />
