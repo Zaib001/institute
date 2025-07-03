@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      scrollBehavior: {
+        smooth: 'smooth',
+      },
       width: {
         150: "150px",
         190: "190px",
