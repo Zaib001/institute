@@ -21,6 +21,8 @@ import ChairmanMessage from './components/ChairmanMessage';
 
 import VisionPage from './pages/VisionPage';
 import TeamSection from './pages/TeamPage';
+import LearningPath from './pages/LearningPath';
+import WhyShaheenPage from './pages/WhyShneenPage';
 
 function App() {
   const location = useLocation();
@@ -71,6 +73,8 @@ function App() {
           <Route path="/message" element={<ChairmanMessage />} />
           <Route path="/vision" element={<VisionPage />} />
           <Route path="/team" element={<TeamSection />} />
+          <Route path="/learning" element={<LearningPath />} />
+          <Route path="/Why Shaheen" element={<WhyShaheenPage />} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/courses" element={<CoursePage />} />
           <Route path="/contact_us" element={<ContactUsPage />} />

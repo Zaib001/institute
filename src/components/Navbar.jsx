@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-6">
-          {['home', 'about', 'message','vision','team', 'services', 'courses', 'contact_us', 'curriculum'].map((link) => (
+          {['home', 'about', 'message','vision','team','Why Shaheen', 'services', 'courses', 'contact_us', 'curriculum'].map((link) => (
             <Link
               key={link}
               to={`/${link}`}
