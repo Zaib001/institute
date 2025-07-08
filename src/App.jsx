@@ -17,6 +17,10 @@ import QuizDetails from './UserDashboard/QuizDetails';
 import AdminDashboard from './AdminDashboard/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import Loader from './UserDashboard/LoadingComponent'; // Import the Loader component
+import ChairmanMessage from './components/ChairmanMessage';
+
+import VisionPage from './pages/VisionPage';
+import TeamSection from './pages/TeamPage';
 
 function App() {
   const location = useLocation();
@@ -64,6 +68,9 @@ function App() {
           <Route path="/quiz/:quizId" element={<ProtectedRoute><QuizDetails /></ProtectedRoute>} />
           <Route path="/home" element={<HeaderPage />} />
           <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/message" element={<ChairmanMessage />} />
+          <Route path="/vision" element={<VisionPage />} />
+          <Route path="/team" element={<TeamSection />} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/courses" element={<CoursePage />} />
           <Route path="/contact_us" element={<ContactUsPage />} />

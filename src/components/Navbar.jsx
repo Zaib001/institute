@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next'; // Keep translation for nav links
-import logo from '../assets/logo.png';
+import logo from '../assets/logo1.png';
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -45,13 +45,13 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-6">
-          {['home', 'about', 'services', 'courses', 'contact_us', 'curriculum'].map((link) => (
+          {['home', 'about', 'message','vision','team', 'services', 'courses', 'contact_us', 'curriculum'].map((link) => (
             <Link
               key={link}
               to={`/${link}`}
-              className="text-gray-800 uppercase hover:text-red-600 font-medium transition duration-300 text-sm"
+              className="text-gray-800 uppercase hover:text-green-600 font-medium transition duration-300 text-sm"
             >
-              {t(`navbar.links.${link}`)}
+              {link}
             </Link>
           ))}
         </div>
