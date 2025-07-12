@@ -51,29 +51,32 @@ const HeroSection = () => {
       >
         <motion.div
           style={{ y: contentY, opacity: contentOpacity }}
-          className="max-w-2xl"
+          className="max-w-2xl "
         >
           <motion.h1
             ref={headingRef}
             initial={{ y: -100, opacity: 0 }}
             animate={headingInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl md:text-6xl font-extrabold leading-10 text-white"
+            className="text-[90px] leading-[100%] font-[400] text-white mb-28"
           >
             A <span className="text-green-500">WORLD CLASS</span><br />
             EDUCATION,<br />
             RIGHT HERE
           </motion.h1>
 
+
           <motion.p
             ref={textRef}
             initial={{ x: 80, opacity: 0 }}
             animate={textInView ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-md md:text-lg mt-6 text-white"
+            className="font-poppins leading-7 mt-6 px-4 md:px-0 text-white text-[17px] font-[400] max-w-xl"
           >
             Shaheen Group of Institutions, a renowned name in the field of education, is thrilled to announce its expansion into the Kingdom of Saudi Arabia and the Middle East.
           </motion.p>
+
+
 
           <motion.button
             ref={btnRef}

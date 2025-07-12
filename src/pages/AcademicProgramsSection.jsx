@@ -58,19 +58,19 @@ const AcademicProgramsSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={textControls}
           transition={{ duration: 1, ease: 'easeOut' }}
-          className="text-white max-w-4xl"
+          className="text-white max-w-7xl"
         >
-          <h2 className="text-3xl md:text-5xl font-bold leading-snug">
+          <h2 className="text-3xl md:text-6xl font-bold leading-snug ">
             FROM OUR <br />
-            <span className="text-green-500">RIGOROUS ACADEMIC PROGRAMS</span><br /><br />
+            <span className="text-[#77C152]">RIGOROUS ACADEMIC PROGRAMS</span><br /><br />
             TO OUR <br />
-            <span className="text-green-500">INNOVATIVE EXTRACURRICULAR ACTIVITIES</span>
+            <span className='text-white'>INNOVATIVE</span><span className="text-[#77C152]"> EXTRACURRICULAR ACTIVITIES</span>
           </h2>
-          <p className="mt-4 text-sm md:text-base text-gray-300">
+          <p className="mt-4 text-sm md:text-base text-gray-300 font-poppins">
             we strive to provide a holistic education that prepares students for success in the 21st century.
             <br />Join us on a journey of discovery, innovation, and growth.
           </p>
-          <button className="mt-8 bg-white text-green-700 px-6 py-2 rounded-full text-sm font-semibold hover:bg-green-500 hover:text-white transition duration-300">
+          <button className="mt-8 bg-white text-green-700 px-6 py-2 rounded-md font-poppins text-sm font-semibold hover:bg-green-500 hover:text-white transition duration-300">
             Learn More →
           </button>
         </motion.div>

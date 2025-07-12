@@ -9,9 +9,17 @@ const features = [
   { title: 'Character Building', desc: 'Education that nurtures both intellect and values.', icon: teacher },
 ];
 
-const galleryImages = new Array(8).fill(
-  'https://upload.wikimedia.org/wikipedia/commons/8/8e/Staples_High_School%2C_Westport%2C_CT.jpg'
-);
+const galleryImages = [
+  'https://images.unsplash.com/photo-1516383607781-913a19294fd1?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1516383607781-913a19294fd1?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1122&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://plus.unsplash.com/premium_photo-1680807869780-e0876a6f3cd5?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  "https://images.unsplash.com/photo-1516383607781-913a19294fd1?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  'https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+];
+
 
 // Card variant for staggered left entrance
 const cardVariants = {
@@ -67,17 +75,20 @@ const WhyShaheenSection = () => {
             transition={{ duration: 0.7 }}
             className="text-center text-3xl md:text-4xl font-bold"
           >
-            WHAT’S THE DIFFERENCE?<br />
-            <span className="text-white">WHY CHOOSE </span>
-            <span className="text-green-500">SHAHEEN SCHOOLS?</span>
+            <span className='text-[21px] font-[400] leading-[112%] text-centers'>WHAT’S THE DIFFERENCE?</span><br />
+
+            <span className="text-white text-[60px] font-[400] leading-[112%] text-center ">WHY CHOOSE </span>
+            <span className="text-green-500 text-[60px] font-[400] leading-[112%] text-center">SHAHEEN SCHOOLS?</span>
+
+
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={headingInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-center text-gray-300 max-w-2xl mx-auto mt-4"
+            className="text-center text-[16px] text-gray-300 max-w-7xl mx-auto mt-4 font-poppins "
           >
-            A beacon of innovation in the realm of learning. Here, memorization takes a backseat as the academy champions a profound understanding of concepts, paving the way for a vibrant learning atmosphere.
+            A beacon of innovation in the realm of learning.<br/> Here, memorization takes a backseat as the academy champions a profound understanding of concepts, paving the way for a vibrant learning atmosphere.
           </motion.p>
 
           <motion.div
@@ -91,7 +102,7 @@ const WhyShaheenSection = () => {
               <motion.div
                 key={i}
                 variants={cardVariants}
-                className="bg-white text-black p-6 rounded-lg shadow-md"
+                className="bg-white text-black p-6 rounded-lg shadow-md font-poppins"
               >
                 <img src={feature.icon} alt="icon" className="w-8 h-8 mb-4" />
                 <h3 className="font-bold text-md">{feature.title}</h3>
@@ -137,7 +148,7 @@ const WhyShaheenSection = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={ctaInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="max-w-2xl mx-auto text-lg md:text-xl"
+          className="max-w-3xl mx-auto text-[40px] font-[400] md:text-xl font-poppins"
         >
           At Shaheen School, students receive a comprehensive education that prioritizes academic excellence, etiquette, and personal development.
         </motion.p>
@@ -145,7 +156,7 @@ const WhyShaheenSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={ctaInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 px-6 py-2 border border-white text-white rounded-full text-sm hover:bg-white hover:text-black transition duration-300"
+          className="mt-6 px-6 py-2 border font-poppins border-white text-white rounded-full text-sm hover:bg-white hover:text-black transition duration-300"
         >
           Enroll Today →
         </motion.button>

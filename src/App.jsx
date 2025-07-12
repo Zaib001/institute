@@ -18,11 +18,15 @@ import AdminDashboard from './AdminDashboard/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 import Loader from './UserDashboard/LoadingComponent'; // Import the Loader component
 import ChairmanMessage from './components/ChairmanMessage';
+import QualityPage from './pages/QualityPage';
 
 import VisionPage from './pages/VisionPage';
 import TeamSection from './pages/TeamPage';
 import LearningPath from './pages/LearningPath';
 import WhyShaheenPage from './pages/WhyShneenPage';
+import AcademicCurriculumPage from './pages/AcademicCurriculumPage';
+import AdmissionsSectionPage from './pages/AdmissionsSectionPage';
+import ParentsPortalPage from './pages/ParentsPortalPage';
 
 function App() {
   const location = useLocation();
@@ -75,6 +79,10 @@ function App() {
           <Route path="/team" element={<TeamSection />} />
           <Route path="/learning" element={<LearningPath />} />
           <Route path="/Why Shaheen" element={<WhyShaheenPage />} />
+          <Route path="/quality" element={<QualityPage />} />
+          <Route path="/acdemic" element={<AcademicCurriculumPage />} />
+          <Route path="/admission" element={<AdmissionsSectionPage />} />
+          <Route path="/parents" element={<ParentsPortalPage/>} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/courses" element={<CoursePage />} />
           <Route path="/contact_us" element={<ContactUsPage />} />

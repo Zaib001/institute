@@ -76,20 +76,29 @@ const ChairmanSection = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={textControls}
             transition={{ duration: 1, delay: 0.2 }}
-            className="w-full md:w-1/2 text-white"
+            className="w-full md:w-2/3 text-white font-poppins mb-20"
           >
-            <p className="text-sm md:text-base font-semibold leading-relaxed">
+            <p
+              className="leading-9 text-[24px] font-[700] font-poppins"
+            
+            >
               This ambitious project, spearheaded by Dr. Abdul Qadeer, Chairman of Shaheen Group of Institutions,
               is set to redefine educational excellence in the region.
             </p>
-            <p className="mt-6 text-sm md:text-base leading-relaxed">
+
+            <p
+              className="mt-6 leading-9 text-[24px] font-[700]"
+             
+            >
               Our upcoming school in Riyadh, set to open in August 2025, will offer a comprehensive curriculum
               from Kindergarten through 12th grade, with integrated coaching for NEET, JEE, and CA Foundation.
             </p>
+
             <button className="mt-6 px-6 py-2 border border-white rounded-full text-sm hover:bg-white hover:text-black transition duration-300">
               Learn More →
             </button>
           </motion.div>
+
         </div>
       </div>
     </section>

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'TriumvirateCG';
+  src: url('../assets/fonts/Triumvirate CG Inserat.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TriumvirateCG';
+  src: url('../assets/fonts/triumviratecgcomp.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TriumvirateCG';
+  src: url('../assets/fonts/triumviratecgextracomp.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}

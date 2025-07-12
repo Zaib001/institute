@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-
+import img from '../assets/1e.jpg'
+import img1 from '../assets/2e.jpg'
+import img2 from '../assets/3e.jpg'
 const images = [
-  'https://media.istockphoto.com/id/1307457391/photo/happy-black-student-raising-arm-to-answer-question-while-attending-class-with-her-university.jpg?s=612x612&w=0&k=20&c=iZaZFyC-WqlqSQc4elqUNPTxLvWPe8P5Tb_YdZnrI9Q=',
-  'https://epe.brightspotcdn.com/53/66/b17323e84e668e02e25d5b4a7a93/teacher-students-classroom.jpg',
-  'https://media.istockphoto.com/id/1307457391/photo/happy-black-student-raising-arm-to-answer-question-while-attending-class-with-her-university.jpg?s=612x612&w=0&k=20&c=iZaZFyC-WqlqSQc4elqUNPTxLvWPe8P5Tb_YdZnrI9Q=',
+  img,img1,img2
 ];
 
 // Framer Motion Variants
@@ -37,22 +37,22 @@ const EngagementForParentsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-black text-white py-20 px-6 md:px-20"
+      className="relative bg-white text-white py-20 px-6 md:px-20"
     >
       <motion.h2
         initial={{ opacity: 0, y: -40 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="text-center text-3xl md:text-4xl font-bold mb-6"
+        className="text-center text-3xl md:text-6xl font-bold mb-6"
       >
-        ENGAGEMENT FOR <span className="text-green-500">PARENTS</span>
+        <span className='text-black'>ENGAGEMENT FOR</span> <span className="text-[#77C152]">PARENTS</span>
       </motion.h2>
 
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-center text-gray-300 max-w-2xl mx-auto mt-4 mb-8"
+        className="text-center text-black font-[400] max-w-7xl mx-auto mt-4 mb-8 font-poppins"
       >
         We believe in fostering strong partnerships with parents, providing them with valuable insights and resources to actively participate in their child's educational journey.
       </motion.p>

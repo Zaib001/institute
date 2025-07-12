@@ -2,9 +2,14 @@ import React, { useRef, useEffect } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import CountUp from 'react-countup';
 
-const cardImages = new Array(5).fill(
-  'https://upload.wikimedia.org/wikipedia/commons/8/8e/Staples_High_School%2C_Westport%2C_CT.jpg'
-);
+const cardImages = [
+  'https://plus.unsplash.com/premium_photo-1687128298212-645127107085?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Nob29sJTIwa2lkc3xlbnwwfHwwfHx8MA%3D%3D',
+  'https://images.unsplash.com/photo-1581726707445-75cbe4efc586?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1534643960519-11ad79bc19df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1588075592405-d3d4f0846961?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+];
+
 
 const cardsData = [
   { value: 35, suffix: '', label: 'Years of Excellence', bg: 'bg-green-500' },
@@ -72,29 +77,36 @@ const ShaheenInNumbersSection = () => {
       {/* Cards */}
       <div
         ref={cardsRef}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
       >
         {cardsData.map((card, i) => (
-          <motion.div
-            key={i}
-            custom={i}
-            variants={cardVariants}
-            initial="hidden"
-            animate={cardsControls}
-            className={`${card.bg} p-8 rounded-lg text-center shadow-xl`}
-          >
-            <h3 className="text-4xl font-bold">
-              {cardsInView && (
-                <CountUp end={card.value} duration={5} suffix={card.suffix} />
-              )}
-            </h3>
-            <p className="text-lg mt-2">{card.label}</p>
-            <img
-              src={cardImages[i]}
-              alt={`Card ${i + 1}`}
-              className="w-full h-40 object-cover mt-4 rounded-b-lg"
-            />
-          </motion.div>
+         <motion.div
+  key={i}
+  custom={i}
+  variants={cardVariants}
+  initial="hidden"
+  animate={cardsControls}
+  className=" h-[500px] flex flex-col overflow-hidden shadow-xl"
+>
+  {/* Top Green Box */}
+  <div className={`${card.bg} text-white text-center py-6 font-poppins h-[136px] flex flex-col justify-center`}>
+    <h3 className="text-3xl font-bold leading-none">
+      {cardsInView && (
+        <CountUp end={card.value} duration={5} suffix={card.suffix} />
+      )}
+    </h3>
+    <p className="text-sm mt-2 leading-tight px-2">{card.label}</p>
+  </div>
+
+  {/* Bottom Image */}
+  <img
+    src={cardImages[i]}
+    alt={`Card ${i + 1}`}
+    className="w-full h-full object-cover"
+  />
+</motion.div>
+
+
         ))}
       </div>
     </section>

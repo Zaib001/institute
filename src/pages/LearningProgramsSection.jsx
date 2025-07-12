@@ -48,10 +48,10 @@ const LearningProgramsSection = () => {
           transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}
           className="text-white max-w-4xl"
         >
-          <h2 className="text-3xl md:text-5xl font-bold">
+          <h2 className="text-3xl md:text-6xl font-bold">
             LEARNING <span className="text-green-500">PROGRAMS</span>
           </h2>
-          <p className="mt-6 text-lg md:text-xl font-medium leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl  leading-relaxed font-poppins max-w-7xl">
             At Shaheen, we’re dedicated to providing a world-class education that empowers students to reach their full potential. Our experienced faculty and caring staff create a nurturing environment where every child feels valued and inspired.
           </p>
         </motion.div>

@@ -9,6 +9,10 @@ export default {
       scrollBehavior: {
         smooth: 'smooth',
       },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      animation: ['motion-safe'],
       width: {
         150: "150px",
         190: "190px",
