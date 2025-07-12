@@ -9,27 +9,24 @@ const HeroSection = () => {
     offset: ["start start", "end start"],
   });
 
-  // Clip-path expand animation
   const clipPath = useTransform(scrollYProgress, [0, 1], ["inset(0 50% 0 0)", "inset(0 0% 0 0)"]);
-
-  // Fade-up and opacity for content
   const contentY = useTransform(scrollYProgress, [0.4, 1], [0, -100]);
   const contentOpacity = useTransform(scrollYProgress, [0.4, 1], [1, 0]);
-
-  // Video dimming
   const videoOpacity = useTransform(scrollYProgress, [0, 1], [1, 0.2]);
 
-  // In-view entrance animation
   const headingRef = useRef(null);
   const textRef = useRef(null);
   const btnRef = useRef(null);
 
-  const headingInView = useInView(headingRef, { margin: "-100px" });
-  const textInView = useInView(textRef, { margin: "-100px" });
-  const btnInView = useInView(btnRef, { margin: "-100px" });
+  const headingInView = useInView(headingRef, { once: true, margin: "-100px" });
+  const textInView = useInView(textRef, { once: true, margin: "-100px" });
+  const btnInView = useInView(btnRef, { once: true, margin: "-100px" });
 
   return (
-    <section ref={sectionRef} className="w-full h-[100vh] relative overflow-hidden">
+    <section 
+      ref={sectionRef} 
+      className="w-full h-screen min-h-[600px] max-h-[1200px] relative overflow-hidden"
+    >
       {/* Background Video */}
       <motion.video
         src={hero}
@@ -47,43 +44,40 @@ const HeroSection = () => {
       {/* Scroll-expanding overlay */}
       <motion.div
         style={{ clipPath }}
-        className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 z-20 flex items-center px-8 py-10 will-change-transform"
+        className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 z-20 flex items-center px-4 sm:px-6 md:px-10 lg:px-20 py-10"
       >
         <motion.div
           style={{ y: contentY, opacity: contentOpacity }}
-          className="max-w-2xl "
+          className="max-w-4xl w-full"
         >
           <motion.h1
             ref={headingRef}
             initial={{ y: -100, opacity: 0 }}
             animate={headingInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-[90px] leading-[100%] font-[400] text-white mb-28"
+            className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[110%] font-normal text-white mb-6 sm:mb-10 md:mb-16"
           >
             A <span className="text-green-500">WORLD CLASS</span><br />
             EDUCATION,<br />
             RIGHT HERE
           </motion.h1>
 
-
           <motion.p
             ref={textRef}
             initial={{ x: 80, opacity: 0 }}
             animate={textInView ? { x: 0, opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-poppins leading-7 mt-6 px-4 md:px-0 text-white text-[17px] font-[400] max-w-xl"
+            className="font-poppins leading-relaxed text-white text-base sm:text-lg md:text-xl font-normal max-w-xl mb-6 sm:mb-8"
           >
             Shaheen Group of Institutions, a renowned name in the field of education, is thrilled to announce its expansion into the Kingdom of Saudi Arabia and the Middle East.
           </motion.p>
-
-
 
           <motion.button
             ref={btnRef}
             initial={{ y: 20, opacity: 0 }}
             animate={btnInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-6 text-white underline text-sm hover:text-green-400 transition"
+            className="mt-4 text-white underline text-base sm:text-lg hover:text-green-400 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded px-2 py-1"
           >
             Learn More
           </motion.button>

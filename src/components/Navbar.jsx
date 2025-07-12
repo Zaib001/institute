@@ -1,24 +1,37 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { logout } from '../store/auth/authSlice';
-import { Link, useNavigate } from 'react-router-dom';
-import { FaUserCircle } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next'; // Keep translation for nav links
-import logo from '../assets/logo1.png';
+import React, { useState, useRef, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { logout } from "../store/auth/authSlice";
+import { Link, useNavigate } from "react-router-dom";
+import { FaUserCircle, FaBars, FaTimes } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import logo from "../assets/logo1.png";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const { user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
   const navigate = useNavigate();
+  const dropdownRef = useRef(null);
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [showMore, setShowMore] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const moreLinks = [
+    { label: "Vision", to: "/vision" },
+    { label: "Our Team", to: "/team" },
+    { label: "Quality Education", to: "/quality" },
+    { label: "Academic Curriculum", to: "/acdemic" },
+    { label: "Admissions", to: "/admission" },
+    { label: "Parents Portal", to: "/parents" },
+  ];
+
 
   const handleLogout = () => {
     dispatch(logout());
     setIsDropdownOpen(false);
-    navigate('/login');
+    navigate("/login");
   };
 
   const toggleDropdown = () => {
@@ -31,94 +44,131 @@ const Navbar = () => {
         setIsDropdownOpen(false);
       }
     };
-    document.addEventListener('mousedown', handleOutsideClick);
+    document.addEventListener("mousedown", handleOutsideClick);
     return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
+      document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, []);
 
+  const navLinks = [
+    { label: "Home", to: "/home" },
+    { label: "About Shaheen", to: "/about" },
+    { label: "Chairman's Message", to: "/message" },
+    { label: "Shaheen Learning Path", to: "/learning" },
+    { label: "Why Shaheen", to: "/Why Shaheen" },
+  ];
+
+
   return (
-    <nav className="bg-white shadow-md w-full z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-16" />
-        </div>
+    <>
+      {/* Desktop Header Top: Login */}
+      <div className="hidden md:flex justify-end items-center space-x-2 text-white bg-black text-[15px] px-14 pt-4">
+        <FaUserCircle size={20} />
+        <Link to="/login" className="hover:text-green-500">
+          Log In
+        </Link>
+      </div>
 
-        <div className="hidden md:flex space-x-6">
-          {['home', 'about', 'message','vision','team','Why Shaheen', 'services', 'courses', 'contact_us', 'curriculum'].map((link) => (
-            <Link
-              key={link}
-              to={`/${link}`}
-              className="text-gray-800 uppercase hover:text-green-600 font-medium transition duration-300 text-sm"
+      <nav className="bg-black w-full z-50 py-3 px-6 font-poppins">
+        <div className="max-w-[1400px] mx-auto flex items-center justify-between">
+          {/* Left: Logo */}
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden text-white text-xl"
             >
-              {link}
-            </Link>
-          ))}
-        </div>
+              {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+            </button>
+            <img src={logo} alt="Shaheen Logo" className="h-14 w-auto" />
+          </div>
 
-        <div className="hidden md:flex space-x-4 z-20">
-          {user ? (
-            <div className="relative" ref={dropdownRef}>
-              <button
-                className="flex items-center space-x-2 focus:outline-none"
-                onClick={toggleDropdown}
+          {/* Center: Desktop Links */}
+          <div className="hidden md:flex items-center space-x-8 font-semibold text-white text-[15px] tracking-wide">
+            {navLinks.map((item, idx) => (
+              <Link
+                key={idx}
+                to={item.to}
+                className={`hover:text-green-500 ${item.active ? "text-green-500" : ""
+                  }`}
               >
-                <FaUserCircle className="text-red-600" size={26} />
-                <span className="text-gray-800 text-sm">{user.name}</span>
+                {item.label}
+              </Link>
+            ))}
+
+            {/* More Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setShowMore(!showMore)}
+                className="hover:text-green-500 focus:outline-none"
+              >
+                More
               </button>
               <AnimatePresence>
-                {isDropdownOpen && (
+                {showMore && (
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                    className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg"
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="absolute -left-36 mt-4 bg-white rounded-md shadow-lg overflow-hidden z-30"
                   >
-                    {user.role === 'student' && (
+                    {moreLinks.map((item, index) => (
                       <Link
-                        to="/studentdashboard"
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
+                        key={index}
+                        to={item.to}
+                        className="block px-4 py-2 text-sm text-black hover:bg-green-500 whitespace-nowrap"
                       >
-                        {t('navbar.user_menu.student_dashboard')}
+                        {item.label}
                       </Link>
-                    )}
-                    {user.role === 'admin' && (
-                      <Link
-                        to="/admindashboard"
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
-                      >
-                        {t('navbar.user_menu.admin_dashboard')}
-                      </Link>
-                    )}
-                    <button
-                      onClick={handleLogout}
-                      className="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100 text-sm"
-                    >
-                      {t('navbar.user_menu.logout')}
-                    </button>
+                    ))}
                   </motion.div>
                 )}
               </AnimatePresence>
             </div>
-          ) : (
-            <>
-              <Link
-                to="/login"
-                className="px-4 py-1 text-white bg-green-600 hover:bg-green-700 transition duration-300 rounded-md text-sm"
-              >
-                {t('navbar.user_menu.sign_in')}
-              </Link>
-              <Link
-                to="/signup"
-                className="px-3 py-1 border border-green-600 text-black hover:bg-green-600 hover:text-white transition duration-300 rounded-md text-sm"
-              >
-                {t('navbar.user_menu.sign_up')}
-              </Link>
-            </>
-          )}
+          </div>
         </div>
-      </div>
-    </nav>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="md:hidden mt-4 bg-black px-4 py-4 text-white font-semibold text-sm space-y-4"
+            >
+              {navLinks.map((item, idx) => (
+                <Link
+                  key={idx}
+                  to={item.to}
+                  className={`block hover:text-green-500 ${item.active ? "text-green-500" : ""
+                    }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+              <div>
+                <p className="mb-1">More</p>
+                {moreLinks.map((item, index) => (
+                  <Link
+                    key={index}
+                    to={item.to}
+                    className="block pl-2 text-gray-300 hover:text-green-500"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+              <div className="flex items-center space-x-2 pt-4 border-t border-gray-700">
+                <FaUserCircle size={20} />
+                <Link to="/login" className="hover:text-green-500">
+                  Log In
+                </Link>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </nav>
+    </>
   );
 };
 

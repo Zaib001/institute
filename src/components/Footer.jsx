@@ -1,22 +1,20 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
+import logo from '../assets/logo1.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { t } = useTranslation(); // Initialize translation hook
 
   return (
-    <footer className="bg-black text-white py-12">
+    <footer className="bg-black text-white py-12 font-poppins">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Information */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">{t('footer.title')}</h3>
-            <p>{t('footer.address.line1')}</p>
-            <p>{t('footer.address.line2')}</p>
-            <p>{t('footer.address.city_state_zip')}</p>
-            <p className="mt-2">{t('footer.address.phone')}</p>
-            <p className="underline mt-2">{t('footer.address.map_directions')}</p>
-          </div>
+          <Link to="/">
+            <img src={logo} alt="Shaheen Logo" className="h-48 w-auto" />
+          </Link>
+
 
           {/* Sitemap */}
           <div>
@@ -51,12 +49,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Footer Section */}
-        <div className="mt-12 border-t border-black pt-4 text-sm text-center md:text-left md:flex justify-between">
-          <p>
-            {t('footer.bottom.text')} <a href="#" className="underline">{t('footer.bottom.privacy')}</a>
-          </p>
-        </div>
+
       </div>
     </footer>
   );
