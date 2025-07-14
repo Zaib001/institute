@@ -76,15 +76,15 @@ export default function LearningSectionTwo() {
       >
         <motion.h2
           variants={textChildVariant}
-          className="text-3xl md:text-4xl font-extrabold leading-tight mb-4"
+          className="text-3xl md:text-7xl font-extrabold leading-tight mb-4"
         >
-          <span className="text-green-600">LEARNING</span> AT <br />
+          <span className="text-[#77C152]">LEARNING</span> AT <br />
           SHAHEEN SCHOOLS
         </motion.h2>
 
         <motion.p
           variants={textChildVariant}
-          className="text-base md:text-lg leading-relaxed text-gray-700 mb-4"
+          className="text-base md:text-lg leading-relaxed text-gray-700 mb-4 font-poppins"
         >
           We strive to develop students who are not only academically proficient but also possess strong
           character traits, including self-direction, empathy, and a commitment to social responsibility.
@@ -92,7 +92,7 @@ export default function LearningSectionTwo() {
 
         <motion.p
           variants={textChildVariant}
-          className="text-base md:text-lg leading-relaxed text-gray-700"
+          className="text-base md:text-lg leading-relaxed text-gray-700 font-poppins"
         >
           By emphasizing critical thinking, creativity, and problem-solving skills, we equip our students
           to address complex global challenges.

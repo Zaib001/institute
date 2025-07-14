@@ -11,11 +11,11 @@ export default function AdmissionsSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
             >
-                <h3 className="text-xl font-bold text-green-600 uppercase">
+                <h3 className="text-4xl font-bold text-[#77C152] uppercase">
                     Don't Miss Your Chance to Join Shaheen Group of Institutions, Riyadh
                 </h3>
 
-                <div className="space-y-4 text-sm md:text-base">
+                <div className="space-y-4 text-sm md:text-base font-poppins">
                     <div>
                         <strong>Why Choose Shaheen?</strong><br />
                         A Legacy of Excellence: Shaheen, a renowned educational institution with a 35-year legacy, is expanding its global footprint to Riyadh.

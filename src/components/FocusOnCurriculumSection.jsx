@@ -60,8 +60,8 @@ export default function FocusOnCurriculumSection() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: i * 0.15 }}
-                      className={`text-3xl md:text-4xl font-extrabold ${['CURRICULUM', 'ATTENTION', 'ACTIVITIES'].includes(word)
-                          ? 'text-green-600'
+                      className={`text-3xl md:text-5xl font-extrabold ${['CURRICULUM', 'ATTENTION', 'ACTIVITIES'].includes(word)
+                          ? 'text-[#77C152]'
                           : 'text-black'
                         }`}
                     >
@@ -69,7 +69,7 @@ export default function FocusOnCurriculumSection() {
                     </motion.h2>
                   ))}
                 </div>
-                <p className="text-gray-700 text-base md:text-lg max-w-xl leading-relaxed">
+                <p className="text-gray-700 text-base md:text-lg max-w-xl leading-relaxed font-poppins">
                   {item.desc}
                 </p>
               </div>

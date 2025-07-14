@@ -32,12 +32,12 @@ const EnrollmentCTA = () => {
         transition={{ duration: 1, ease: 'easeOut', delay: 0.6 }}
         viewport={{ once: true }}
       >
-        <p className="text-white text-2xl md:text-3xl mb-6 font-medium leading-snug">
+        <p className="text-white text-2xl md:text-3xl mb-6 leading-snug font-poppins">
           We have a dedicated program
           tried and tested for the same.
         </p>
         <motion.button
-          className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-green-400 transition-all duration-300 flex items-center gap-2 mx-auto"
+          className="bg-white text-black px-6 py-3 rounded-full font-poppins hover:bg-green-400 transition-all duration-300 flex items-center gap-2 mx-auto"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

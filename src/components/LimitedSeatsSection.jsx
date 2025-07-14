@@ -36,8 +36,8 @@ export default function LimitedSeatsSection() {
             variants={textVariants}
             className={`${
               line.big
-                ? "text-4xl md:text-7xl font-extrabold text-[#80986F]"
-                : "text-xl md:text-3xl font-bold"
+                ? "text-4xl md:text-[100px] leading-10 font-extrabold text-[#80986F]"
+                : "text-xl md:text-5xl font-bold"
             } ${line.highlight ? "text-green-500" : "text-white"} mb-4`}
           >
             {line.text}

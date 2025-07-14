@@ -51,11 +51,11 @@ export default function LearningSection() {
         initial="hidden"
         animate={controls}
       >
-        <h2 className="text-3xl md:text-4xl font-extrabold leading-tight mb-4">
-          <span className="text-green-600">LEARNING</span> AT <br />
+        <h2 className="text-3xl md:text-7xl font-extrabold leading-tight mb-4">
+          <span className="text-[#77C152]">LEARNING</span> AT <br />
           SHAHEEN SCHOOLS
         </h2>
-        <p className="text-base md:text-lg leading-relaxed text-gray-700">
+        <p className="text-base md:text-lg leading-relaxed text-gray-700 font-poppins">
           Shaheen Schools aims to cultivate graduates who are well-rounded individuals,{' '}
           <span className="font-semibold">prepared to lead purposeful lives</span>.
           Our curriculum is designed to foster passionate learners, critical thinkers,
@@ -75,9 +75,7 @@ export default function LearningSection() {
           alt="Lecture Hall"
           className="w-full h-screen object-cover rounded-md shadow-lg"
         />
-        <span className="absolute bottom-8 left-6 text-[6vw] md:text-[4vw] font-extrabold text-white opacity-10 uppercase tracking-wide">
-          Learning
-        </span>
+       
       </motion.div>
     </section>
   );

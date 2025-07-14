@@ -24,7 +24,7 @@ export default function SafetySection() {
         >
           <button
             onClick={() => setShowMore(false)}
-            className="text-sm text-blue-600 mb-4 flex items-center gap-1"
+            className="text-sm text-black mb-4 flex items-center gap-1"
           >
             ← Go Back
           </button>
@@ -34,8 +34,8 @@ export default function SafetySection() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-6 text-gray-800">
               <div>
-                <h3 className="font-bold text-lg mb-1">Comprehensive Education</h3>
-                <p>
+                <h3 className="font-bold text-xl mb-1">Comprehensive Education</h3>
+                <p className="font-poppins">
                   Shaheen Group of Institutions is now into the Kingdom of Saudi Arabia and the Middle East.
                   This ambitious project is set to redefine educational excellence in the region. Our new
                   school in Riyadh will offer comprehensive education from KG to 12th grade with coaching for
@@ -43,16 +43,16 @@ export default function SafetySection() {
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-1">Facility Guidelines</h3>
-                <p>
+                <h3 className="font-bold text-xl mb-1">Facility Guidelines</h3>
+                <p className="font-poppins">
                   At Shaheen School Riyadh, we prioritize the health and safety of our students, staff,
                   and visitors. All individuals on campus are required to wear masks, practice frequent
                   hand washing, and maintain safe distances to ensure a secure and healthy learning environment.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-1">Parental Involvement</h3>
-                <p>
+                <h3 className="font-bold text-xl mb-1">Parental Involvement</h3>
+                <p className="font-poppins">
                   We encourage active parental involvement in the educational journey of our students.
                   Parents are essential partners in creating a supportive and enriching academic experience.
                   Through open communication and collaboration, we foster a strong school-home relationship
@@ -89,11 +89,11 @@ export default function SafetySection() {
               transition={{ duration: 0.6 }}
               className="md:w-1/2 space-y-4"
             >
-              <h2 className="text-4xl md:text-5xl font-extrabold text-green-600 uppercase">
+              <h2 className="text-4xl md:text-7xl font-extrabold text-[#77C152] uppercase">
                 Safety and Security
               </h2>
 
-              <p>
+              <p className="font-poppins"s>
                 At Shaheen School Riyadh, <strong>safety is our top priority.</strong><br />
                 We have implemented strict safety measures to ensure a secure environment for all students.
                 Click here to learn more about our safety protocols and how we prioritize the well-being

@@ -22,7 +22,7 @@ export default function LearningCircleSection() {
       />
 
       {/* Right Content */}
-      <div className="w-full md:w-1/2 space-y-6 absolute left-[600px]" data-aos="fade-left">
+      <div className="w-full md:w-1/2 space-y-6 absolute left-[600px] font-poppins" data-aos="fade-left">
         <motion.p
           className="text-md md:text-lg"
           initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import arrowImg from '../assets/arrow.svg'
 
 const StrategicLocationsSection = () => {
   const sectionRef = useRef(null);
@@ -27,7 +28,7 @@ const StrategicLocationsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-white min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 md:px-20 py-20 overflow-hidden relative"
+      className="w-full bg-white min-h-screen flex flex-col lg:flex-row items-center justify-center overflow-hidden relative"
     >
       {/* Left - Embedded Google Map */}
       <motion.div
@@ -43,60 +44,42 @@ const StrategicLocationsSection = () => {
           height="900"
           allowFullScreen=""
           loading="lazy"
-          className="border-none w-full h-[300px] md:h-[400px]"
+          className="border-none w-full h-[300px] md:h-screen"
         ></iframe>
       </motion.div>
 
       {/* Right - Text Content */}
       <motion.div
-        className="w-full lg:w-1/2 text-black pl-0 lg:pl-12"
+        className="w-full lg:w-1/2 text-black pl-0 lg:pl-12  px-6 md:px-20 py-20"
         variants={contentVariants}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
       >
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-          STRATEGIC <span className="text-green-500">LOCATIONS</span>
+        <h2 className="text-3xl md:text-7xl font-extrabold mb-4">
+          <span className='text-[#77C152]'>STRATEGIC LOCATIONS</span>
         </h2>
-        <p className="text-base md:text-lg text-gray-800 mb-6">
+        <p className="text-base md:text-md text-gray-800 mb-6 font-poppins">
           The school is located in Al Yarmuk, near landmarks such as Riyadh's Rimal Mall &
           Kingdom Hospital. Premier towers, luxury residences, and key academic hubs make this
           location ideal for students.
         </p>
-        <ul className="list-disc ml-5 text-gray-700 mb-4 leading-relaxed">
+        <ul className="list-disc ml-5 text-gray-700 mb-4 leading-relaxed font-poppins">
           <li>5 min drive from Riyadh International Airport</li>
           <li>2 min walk from Rimal Mall</li>
           <li>10 min drive from Kingdom Tower</li>
         </ul>
-        <p className="text-md font-semibold">
-          The Shaheen Group is also <span className="text-green-600">expanding to UAE & Qatar</span>.
+        <p className="text-md font-poppins">
+          The Shaheen Group is also <span className="font-semibold">planning to expand its footprint to Jeddah, Jubail and other targeted cities</span> in KSA, in the near future.
         </p>
       </motion.div>
 
       {/* Scroll Arrows */}
-      <div className="absolute bottom-6 right-6 flex flex-col gap-1">
-        <div className="w-6 h-6 animate-bounce">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path
-              d="M6 9l6 6 6-6"
-              stroke="#4ADE80"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+        <div className="absolute bottom-0 right-20 z-30 flex flex-col gap-2">
+          <div className="w-28 h-28 animate-bounce">
+            <img src={arrowImg} alt="Scroll down" className="w-full h-full object-contain" />
+          </div>
+
         </div>
-        <div className="w-6 h-6 animate-bounce delay-200">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path
-              d="M6 9l6 6 6-6"
-              stroke="#4ADE80"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
-      </div>
     </section>
   );
 };

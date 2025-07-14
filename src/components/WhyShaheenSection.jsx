@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import libraryVideo from '../assets/hero.mp4';
+import arrowImg from '../assets/arrow.svg'
 
 export default function WhyShaheenSection() {
     const ref = useRef(null);
@@ -55,7 +56,7 @@ export default function WhyShaheenSection() {
                     initial="hidden"
                     animate={controls}
                 >
-                    <h4 className="text-sm text-gray-400 font-bold uppercase ">
+                    <h4 className="text-sm text-[#80986F] font-bold uppercase ">
                         What’s the difference?
                     </h4>
 
@@ -67,7 +68,7 @@ export default function WhyShaheenSection() {
                                 variants={wordFadeVariant}
                                 initial="hidden"
                                 animate={controls}
-                                className="text-3xl md:text-4xl font-extrabold text-[#7a9462]"
+                                className="text-3xl md:text-7xl font-extrabold text-[#7a9462]"
                             >
                                 {word}
                             </motion.h2>
@@ -78,9 +79,9 @@ export default function WhyShaheenSection() {
                         variants={containerVariant}
                         initial="hidden"
                         animate={controls}
-                        className="text-xl md:text-2xl font-extrabold"
+                        className="text-xl md:text-4xl font-extrabold"
                     >
-                        <span className="text-green-600">Meaningful</span>{' '}
+                        <span className="text-[#77C152]">Meaningful</span>{' '}
                         <span className="text-black">Education</span>
                     </motion.h3>
 
@@ -88,7 +89,7 @@ export default function WhyShaheenSection() {
                         variants={containerVariant}
                         initial="hidden"
                         animate={controls}
-                        className="text-gray-700 text-base md:text-lg max-w-xl leading-relaxed"
+                        className="text-gray-700 text-base md:text-md font-poppins max-w-xl leading-relaxed"
                     >
                         At Shaheen School, students will receive a well-rounded education
                         that emphasizes academic excellence, etiquettes, and personality development.
@@ -111,7 +112,12 @@ export default function WhyShaheenSection() {
                     className="w-full h-screen object-cover"
                 />
             </motion.div>
+ <div className="absolute bottom-28 left-32 z-30 flex flex-col gap-2">
+          <div className="w-28 h-28 animate-bounce">
+            <img src={arrowImg} alt="Scroll down" className="w-full h-full object-contain" />
+          </div>
 
+        </div>
             {/* Background Blob */}
             <div className="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-green-200 rounded-full opacity-10 blur-3xl z-0" />
         </section>

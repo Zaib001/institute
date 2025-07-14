@@ -53,7 +53,7 @@ export default function MiddleSchoolSection() {
       {/* Center Text */}
       <div className="w-full md:w-1/2 space-y-5">
         <motion.h2
-          className="text-2xl md:text-4xl font-extrabold"
+          className="text-2xl md:text-6xl font-extrabold"
           variants={textVariant}
           initial="hidden"
           animate={controls}
@@ -63,7 +63,7 @@ export default function MiddleSchoolSection() {
         </motion.h2>
 
         <motion.h3
-          className="text-green-600 font-bold text-lg md:text-xl uppercase"
+          className="text-[#77C152] font-bold text-lg md:text-2xl uppercase"
           variants={textVariant}
           initial="hidden"
           animate={controls}
@@ -73,7 +73,7 @@ export default function MiddleSchoolSection() {
         </motion.h3>
 
         <motion.p
-          className="text-gray-700 text-base md:text-lg leading-relaxed"
+          className="text-gray-700 text-base md:text-lg leading-relaxed font-poppins"
           variants={textVariant}
           initial="hidden"
           animate={controls}
@@ -86,7 +86,7 @@ export default function MiddleSchoolSection() {
         </motion.p>
 
         <motion.p
-          className="text-gray-700 text-base md:text-lg"
+          className="text-gray-700 text-base md:text-lg font-poppins"
           variants={textVariant}
           initial="hidden"
           animate={controls}

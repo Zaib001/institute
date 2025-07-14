@@ -58,9 +58,9 @@ export default function TeamSection() {
   }, []);
 
   return (
-    <section className="pb-20">
+    <section className="pb-20 bg-[#E7E5DC] h-screen">
       <h2
-        className="text-3xl md:text-4xl font-extrabold mb-10 transition-colors duration-500 w-full py-10 px-6 md:px-16"
+        className="text-3xl md:text-7xl font-extrabold mb-10 transition-colors duration-500 w-full py-10 px-6 md:px-16"
         style={{ color: teamMembers[activeIndex].color }}
       >
         OUR TEAM
@@ -74,7 +74,7 @@ export default function TeamSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.3 }}
             onClick={() => setActiveIndex(i)}
-            className={`w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-[4px] cursor-pointer ${activeIndex === i ? 'border-[5px]' : 'border-white'}`}
+            className={`w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden border-[4px] cursor-pointer ${activeIndex === i ? 'border-[5px]' : 'border-white'}`}
             style={{ borderColor: activeIndex === i ? teamMembers[i].color : '#ccc' }}
           >
             <img src={member.image} alt={member.name} className="w-full h-full object-cover" />

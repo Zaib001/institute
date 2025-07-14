@@ -11,8 +11,8 @@ export default function LearningSection2({ title, description, image, animation 
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-green-600 mb-6">{title}</h2>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+        <h2 className="text-4xl md:text-7xl font-bold text-[#77C152] mb-6">{title}</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-poppins">
           {description}
         </p>
       </motion.div>

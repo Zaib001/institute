@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-
+import arrowImg from '../assets/arrow.svg'
 const AboutUsHeader = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
@@ -25,10 +25,10 @@ const AboutUsHeader = () => {
           animate={isInView ? 'visible' : 'hidden'}
           className="flex-1"
         >
-          <h2 className="text-green-600 text-4xl md:text-6xl font-extrabold leading-tight">
+          <h2 className="text-[#77C152] text-4xl md:text-[100px] font-extrabold leading-tight">
             A VISIONARY <br /> INITIATIVE
           </h2>
-          <p className="mt-6 text-gray-800 text-base md:text-lg max-w-xl leading-relaxed">
+          <p className="mt-6 text-gray-800 text-base md:text-[18px] max-w-5xl leading-relaxed font-poppins">
             Shaheen Group of Institutions, a renowned name in the field of education, is thrilled to announce
             its expansion into the Kingdom of Saudi Arabia and the Middle East. This ambitious project,
             spearheaded by <strong>Dr. Abdul Qadeer</strong>, Chairman of Shaheen Group of Institutions, is set
@@ -52,6 +52,12 @@ const AboutUsHeader = () => {
             <div className="absolute top-1/2 right-[-20%] transform -translate-y-1/2 w-[180px] h-[180px] bg-green-400 rounded-full z-0"></div>
           </div>
         </motion.div>
+        <div className="absolute -bottom-20 right-20 z-30 flex flex-col gap-2">
+          <div className="w-28 h-28 animate-bounce">
+            <img src={arrowImg} alt="Scroll down" className="w-full h-full object-contain" />
+          </div>
+
+        </div>
       </div>
     </section>
   );

@@ -26,10 +26,10 @@ export default function SchoolCanteenSection() {
         viewport={{ once: true }}
         className="px-6 md:px-16 py-12 text-center md:text-left"
       >
-        <h2 className="text-4xl md:text-6xl font-extrabold text-green-600 uppercase mb-6">
+        <h2 className="text-4xl md:text-7xl font-extrabold text-[#77C152] uppercase mb-6">
           School Canteen
         </h2>
-        <p className="text-gray-700 text-base md:text-lg max-w-3xl mx-auto md:mx-0">
+        <p className="text-gray-700 text-base md:text-lg max-w-3xl mx-auto md:mx-0 font-poppins">
           We will have a School Canteen that provides
           <strong> nutritious and balanced meals</strong> for our students.
           Watch this space to view our Canteen menu and learn about our commitment

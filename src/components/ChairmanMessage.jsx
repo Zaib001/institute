@@ -37,7 +37,7 @@ const ChairmanMessage = () => {
     >
       {/* Left Side: Text */}
       <div className="w-full lg:w-2/3 sticky top-24">
-        <h2 className="text-green-600 text-4xl md:text-5xl font-extrabold mb-8">
+        <h2 className="text-[#77C152] text-4xl md:text-7xl font-extrabold mb-8">
           MESSAGE FROM OUR CHAIRMAN
         </h2>
 
@@ -45,7 +45,7 @@ const ChairmanMessage = () => {
           <AnimatePresence mode="wait">
             <motion.p
               key={currentIndex}
-              className="absolute top-0 left-0 w-full text-gray-800 text-lg md:text-xl leading-relaxed"
+              className="absolute top-0 left-0 w-full text-gray-800 text-lg md:text-xl leading-relaxed font-poppins"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}

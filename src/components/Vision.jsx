@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import VM from '../assets/V&M.jpg';
+import arrowImg from '../assets/arrow.svg';
 
 const Vision = () => {
   const ref = useRef(null);
@@ -8,39 +10,47 @@ const Vision = () => {
   return (
     <section
       ref={ref}
-      className="w-full min-h-screen bg-white flex flex-col lg:flex-row items-center justify-between px-6 md:px-16 py-20 gap-10 overflow-hidden"
+      className="relative w-full min-h-screen bg-white flex flex-col lg:flex-row items-center justify-between gap-10 overflow-hidden"
     >
       {/* Left Side: Full Image */}
       <motion.div
-        className="w-full lg:w-1/2 "
+        className="w-full lg:w-1/2"
         initial={{ opacity: 0, x: -250 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 1 }}
       >
-         <img
-          src="https://oxfordlearning.com/wp-content/uploads/2025/03/GettyImages-1130406922-scaled-1.jpg"
+        <img
+          src={VM}
           alt="Vision and Mission"
-          className="w-full h-full object-cover"
+          className="w-full h-screen object-cover"
         />
       </motion.div>
 
-      {/* Right Side: Text + Arrows */}
+      {/* Right Side: Text */}
       <motion.div
-        className="w-full lg:w-1/2"
+        className="w-full lg:w-1/2 px-6 md:px-12"
         initial={{ opacity: 0, y: 510 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-green-600 text-4xl md:text-5xl font-extrabold mb-4">VISION</h2>
-
-        <p className="text-gray-800 text-lg md:text-xl leading-relaxed font-medium">
+        <h2 className="text-[#77C152] text-4xl md:text-7xl font-extrabold mb-4">VISION</h2>
+        <p className="text-gray-800 text-lg md:text-xl leading-relaxed font-poppins">
           To identify, <strong>tap and nurture</strong> the innate potential in every child to shape the
           generation next that’s successful, socially responsible and reveres the noble tenets of constitution
           to imbibe the true concept of wholesome living.
         </p>
-
-       
       </motion.div>
+
+      {/* Scroll Down Arrow */}
+      <div className="absolute bottom-6 right-10 z-40">
+        <div className="w-12 h-12 md:w-28 md:h-28 animate-bounce">
+          <img
+            src={arrowImg}
+            alt="Scroll down"
+            className="w-full h-full object-contain"
+          />
+        </div>
+      </div>
     </section>
   );
 };

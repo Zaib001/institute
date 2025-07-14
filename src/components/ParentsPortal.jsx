@@ -13,16 +13,16 @@ export default function ParentsPortal() {
           transition={{ duration: 0.7 }}
           className="md:w-1/2"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-green-600 mb-2 uppercase">
+          <h2 className="text-4xl md:text-[80px] leading-[40px] my-9  font-extrabold text-green-600 mb-2 uppercase">
             Parents Portal
           </h2>
-          <p className="text-gray-700 mb-6">
+          <p className="text-gray-700 mb-6 font-poppins">
             Welcome to the Shaheen Group Parent Portal!
           </p>
-          <p className="text-gray-800 mb-4">
+          <p className="text-gray-800 mb-4 font-poppins">
             Your gateway to your child’s educational journey. Here, you can:
           </p>
-          <ul className="list-disc list-inside space-y-3 text-gray-800 text-sm md:text-base">
+          <ul className="list-disc list-inside space-y-3 text-gray-800 text-sm md:text-base font-poppins">
             <li>
               <strong>Monitor Progress:</strong> Keep track of your child’s academic performance, attendance, and behavior.
             </li>

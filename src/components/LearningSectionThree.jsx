@@ -41,8 +41,8 @@ export default function LearningSectionThree() {
       className="w-full bg-white px-6 md:px-16 py-24 text-center min-h-screen overflow-hidden"
     >
       {/* Typing Heading (CSS-based) */}
-      <div className="mb-6 text-3xl md:text-4xl font-extrabold uppercase tracking-tight">
-        <span className="text-green-600 typing-text">LEARNING</span>{' '}
+      <div className="mb-6 text-3xl md:text-7xl font-extrabold uppercase tracking-tight">
+        <span className="text-[#77C152] typing-text">LEARNING</span>{' '}
         <span className="text-black">AT SHAHEEN SCHOOLS</span>
       </div>
 
@@ -51,7 +51,7 @@ export default function LearningSectionThree() {
         variants={textVariant}
         initial="hidden"
         animate={controls}
-        className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed mb-10"
+        className="text-base md:text-lg text-gray-700 font-poppins max-w-3xl mx-auto leading-relaxed mb-10"
       >
         Our graduates will be equipped to excel in higher education, contribute meaningfully to society,
         and make a positive impact on the world.

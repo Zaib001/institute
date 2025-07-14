@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import m1 from '../assets/1.jpg';
 import m2 from '../assets/2.jpg';
 import m3 from '../assets/3.jpg';
+import arrowImg from '../assets/arrow.svg'
 
 const CoreValuesSection = () => {
     const sectionRef = useRef(null);
@@ -57,43 +58,43 @@ const CoreValuesSection = () => {
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-60" />
                 {/* Text on top */}
-               <motion.div
-  className="relative z-10 px-6 md:px-16 py-20 text-white"
-  variants={textVariants}
-  initial="hidden"
-  animate={inView ? 'visible' : 'hidden'}
->
-  <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-green-400">
-    OUR CORE VALUES
-  </h2>
+                <motion.div
+                    className="relative z-10 px-6 md:px-16 py-20 text-white"
+                    variants={textVariants}
+                    initial="hidden"
+                    animate={inView ? 'visible' : 'hidden'}
+                >
+                    <h2 className="text-3xl md:text-7xl font-extrabold mb-6 text-[#77C152]">
+                        OUR CORE VALUES
+                    </h2>
 
-  <p className="leading-relaxed mb-6 text-gray-200">
-    At Shaheen School, students will receive a well-rounded education that emphasizes academic excellence,
-    etiquette, and personality development. We want our children to learn about the first man on the moon—
-    but not at the cost of missing out the knowledge of the only Man who had split the moon into two pieces.
-  </p>
+                    <p className="leading-relaxed mb-6 text-gray-200 font-poppins">
+                        At Shaheen School, students will receive a well-rounded education that emphasizes academic excellence,
+                        etiquette, and personality development. We want our children to learn about the first man on the moon—
+                        but not at the cost of missing out the knowledge of the only Man who had split the moon into two pieces.
+                    </p>
 
-  <p className="mb-6 text-gray-300">
-    We want our children to be excellent doctors—but with empathy. Excellent professionals—but with humbleness
-    to their parents. Exceptional engineers—but while showing respect to elders.
-  </p>
+                    <p className="mb-6 text-gray-300 font-poppins">
+                        We want our children to be excellent doctors—but with empathy. Excellent professionals—but with humbleness
+                        to their parents. Exceptional engineers—but while showing respect to elders.
+                    </p>
 
-  <p className="mb-6 text-gray-300">
-    We don’t teach our children to move ahead *with* everyone, we teach them to move ahead *along* everyone.
-    We believe students should excel in education but shouldn’t be socially shy, and should be able to speak
-    in front of 1000 people like a roaring lion.
-  </p>
+                    <p className="mb-6 text-gray-300 font-poppins">
+                        We don’t teach our children to move ahead *with* everyone, we teach them to move ahead *along* everyone.
+                        We believe students should excel in education but shouldn’t be socially shy, and should be able to speak
+                        in front of 1000 people like a roaring lion.
+                    </p>
 
-  <p className="mb-6 text-gray-300">
-    Their walk and talk should reflect the personality of an upcoming leader, someone who has visions in life
-    and lives for a mission.
-  </p>
+                    <p className="mb-6 text-gray-300 font-poppins">
+                        Their walk and talk should reflect the personality of an upcoming leader, someone who has visions in life
+                        and lives for a mission.
+                    </p>
 
-  <p className="mb-6 text-gray-300">
-    In a nutshell, we don’t just educate—we nurture personality. We have a dedicated program tried and tested
-    for the same.
-  </p>
-</motion.div>
+                    <p className="mb-6 text-gray-300 font-poppins">
+                        In a nutshell, we don’t just educate—we nurture personality. We have a dedicated program tried and tested
+                        for the same.
+                    </p>
+                </motion.div>
 
             </motion.div>
 
@@ -139,27 +140,9 @@ const CoreValuesSection = () => {
 
             {/* Arrows at Bottom Center */}
             <div className="absolute bottom-6 left-1/2 transform -rotate-90 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
-                <div className="w-6 h-6 animate-bounce">
-                    <svg viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M6 9l6 6 6-6"
-                            stroke="#4ADE80"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    </svg>
-                </div>
-                <div className="w-6 h-6 animate-bounce delay-200">
-                    <svg viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M6 9l6 6 6-6"
-                            stroke="#4ADE80"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    </svg>
+                <div className="w-28 h-28 animate-bounce">
+                    <img src={arrowImg} alt="Scroll down" className="w-full h-full object-contain" />
+
                 </div>
             </div>
         </section>

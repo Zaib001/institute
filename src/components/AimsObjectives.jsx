@@ -18,10 +18,10 @@ export default function AimsObjectives() {
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-green-500 mb-6">
+        <h2 className="text-4xl md:text-7xl font-bold text-[#77C152] mb-6">
           AIMS & OBJECTIVES
         </h2>
-        <p className="text-lg md:text-xl leading-relaxed">
+        <p className="text-lg md:text-xl leading-relaxed font-poppins">
           The aim of our curriculum is to develop the understanding, knowledge
           and skills of each student so that they are able to meet the
           challenges that lie ahead of them in a rapidly changing and

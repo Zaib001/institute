@@ -53,10 +53,10 @@ export default function AcademicSection() {
                 animate={textControls}
                 className="w-1/2 absolute left-[600px]"
             >
-                <h2 className="text-4xl font-bold text-green-600 mb-4">
+                <h2 className="text-7xl font-bold text-[#77C152] mb-4">
                     ACADEMIC <br /> CURRICULUM
                 </h2>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed font-poppins">
                     Curriculum development is a continuous and essential part of Shaheen School Riyadh, reflecting our commitment to adapt to the changing needs of society. <strong>We actively promote innovation</strong> in teaching and learning, creating a dynamic environment where students engage with diverse subjects in meaningful and relevant ways.
                 </p>
             </motion.div>

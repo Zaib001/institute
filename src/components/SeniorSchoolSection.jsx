@@ -38,7 +38,7 @@ export default function SeniorSchoolSection() {
       {/* Text Column */}
       <div className="w-full md:w-1/2 space-y-6">
         <motion.h2
-          className="text-3xl md:text-4xl font-extrabold uppercase"
+          className="text-3xl md:text-6xl font-extrabold uppercase"
           variants={textReveal}
           initial="hidden"
           animate={controls}
@@ -48,25 +48,25 @@ export default function SeniorSchoolSection() {
         </motion.h2>
 
         <motion.h3
-          className="text-green-600 font-bold text-lg md:text-xl uppercase"
+          className="text-[#77C152] font-bold text-lg md:text-2xl uppercase"
           variants={textReveal}
           initial="hidden"
           animate={controls}
           custom={1}
         >
-          Grades 9, 10, 11 and 12 · Separate classes · NEET / JEE / CA Foundation
-        </motion.h3>
+          Grades  9, 10, 11 and 12 , catering to students aged  14 to 18  years old.
+          Separate Classes for Boys and Girls
+          Integrated NEET/ JEE/ CA Foundation        </motion.h3>
 
         <motion.p
-          className="text-gray-700 text-base md:text-lg leading-relaxed"
+          className="text-gray-700 text-base md:text-lg leading-relaxed font-poppins"
           variants={textReveal}
           initial="hidden"
           animate={controls}
           custom={2}
         >
-          Shaheen Schools’ Senior Schools prepare students for higher education and careers...
-          <br /><br />
-          We emphasize <strong>critical thinking, problem-solving, and communication skills</strong> through project-based learning...
+          Shaheen Schools' Senior Schools prepare students for higher education and future careers by fostering their academic abilities, leadership skills, and global perspective. Our rigorous curriculum, which includes Integrated NEET/ JEE/ CA Foundation options, ensures that students are well-prepared for university admissions and help them secure Free Seats.          <br /><br />
+          We emphasize <strong>critical thinking, problem-solving, and communication skills through our focus on project-based learning and leadership development.</strong> By providing a personalized approach and a wide range of opportunities, we empower students to reach their full potential and make a positive impact on the world.
         </motion.p>
       </div>
 

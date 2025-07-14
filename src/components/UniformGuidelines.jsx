@@ -12,10 +12,10 @@ export default function UniformGuidelines() {
         transition={{ duration: 0.8 }}
         className="w-full md:w-1/2 px-6 md:px-20 py-12 md:py-24"
       >
-        <h2 className="text-4xl md:text-6xl font-extrabold text-green-600 uppercase mb-6 leading-tight">
+        <h2 className="text-4xl md:text-7xl font-extrabold text-[#77C152] uppercase mb-6 leading-tight">
           Uniform<br />Guidelines
         </h2>
-        <p className="text-gray-800 text-base md:text-lg max-w-xl">
+        <p className="text-gray-800 text-base md:text-lg max-w-xl font-poppins">
           Our school maintains a standard uniform policy to instill a 
           <strong> sense of unity and discipline</strong> among students.
           Click here to explore our uniform guidelines and the dress code for 

@@ -9,7 +9,7 @@ export default function LearningSection() {
     <div className="mt-20">
     <section
       ref={ref}
-      className="flex flex-col md:flex-row items-center justify-center gap-8 bg-white py-10"
+      className="flex flex-col md:flex-row items-center justify-center font-poppins gap-8 bg-white py-10"
     >
       <motion.div
         initial={{ x: -50, opacity: 0 }}

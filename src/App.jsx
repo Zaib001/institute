@@ -50,7 +50,7 @@ function App() {
   return (
     <>
           {shouldShowNavbarAndFooter && <Navbar />}
-      <div>
+      <div className='bg-[#E7E5DC]'>
         <Routes>
           <Route path="/" element={<HeaderPage />} />
           <Route path="/login" element={<LoginPage />} />

@@ -55,18 +55,18 @@ export default function PreKgSection() {
         animate={controls}
         className="w-full md:w-[55%] mt-10 md:mt-0"
       >
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-3">
+        <h2 className="text-3xl md:text-7xl font-extrabold mb-3">
           <span className="text-black">PRE-KG & KG</span>
         </h2>
-        <h3 className="text-green-600 font-bold uppercase text-lg mb-5">
+        <h3 className="text-[#77C152] font-bold uppercase text-3xl mb-5">
           Nursery, LKG and UKG for Boys and Girls aged 4 to 6
         </h3>
-        <p className="text-base md:text-lg leading-relaxed text-gray-700 mb-4">
+        <p className="text-base md:text-lg leading-relaxed text-gray-700 mb-4 font-poppins">
           Shaheen Schools' Kindergarten program, for children aged 4–6, is designed to nurture young minds
           holistically. Through a play-based, <strong>experiential approach, we foster children’s social,
           emotional, and cognitive development.</strong>
         </p>
-        <p className="text-base md:text-lg leading-relaxed text-gray-700">
+        <p className="text-base md:text-lg leading-relaxed text-gray-700 font-poppins">
           Our child-centered classrooms provide safe and engaging learning environments that encourage curiosity
           and exploration. By integrating subjects like English, Arabic, Mathematics, Science, Computing, Chinese,
           Art, Music, and Physical Education, we equip students with the
