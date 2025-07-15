@@ -5,6 +5,7 @@ import LearningCircleSection from '../components/LearningCircleSection'
 import AimsObjectives from '../components/AimsObjectives'
 import LearningSection2 from '../components/LearningSection2'
 import sectionsData from "../components/sectionsData";
+
 const AcademicCurriculumPage = () => {
   return (
     <div>

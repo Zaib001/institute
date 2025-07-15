@@ -8,8 +8,8 @@ export default function WhyShaheenPage() {
   return (
     <main className='bg-[#F9F9F9]'>
       <WhyShaheenSection/>
-      <FocusOnCurriculumSection/>
-      <WhyShaheenSection1/>
+      {/* <FocusOnCurriculumSection/> */}
+      {/* <WhyShaheenSection1/> */}
       <WhyShaheen/>
     </main>
   );

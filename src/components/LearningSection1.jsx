@@ -20,7 +20,7 @@ export default function LearningSection() {
         <img
           src={img1} // Replace with actual path
           alt="Classroom"
-          className="w-full md:w-2/3 h-[700px] rounded shadow-lg"
+          className="w-full md:w-2/3 h-[600px] rounded shadow-lg"
         />
       </motion.div>
 
@@ -30,7 +30,7 @@ export default function LearningSection() {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="w-full md:w-1/2 "
       >
-        <p className="text-gray-800 text-lg leading-relaxed absolute left-[400px] top-[600px] p-44">
+        <p className="text-gray-800 text-xl leading-relaxed absolute left-[400px] top-[700px] p-44">
           Learning goes beyond simply acquiring knowledge; it involves real life
           application and nurtures reflective, independent, and responsible
           learners. Our curriculum emphasizes creativity, critical thinking,
@@ -38,7 +38,7 @@ export default function LearningSection() {
           to take ownership of their growth through purposeful projects,
           collaborative activities, and service-oriented initiatives.
         </p>
-        <p className="text-gray-800 text-lg leading-relaxed absolute left-[400px] top-[800px] p-44">
+        <p className="text-gray-800 text-xl leading-relaxed absolute left-[400px] top-[950px] p-44">
           Structured opportunities, such as student-led conferences, provide platforms for <strong>reflection, goal-seeing, and self-expression, which help to build confidence and essential life skills.</strong> Co-curricular activities, including seminars, symposiums, discussions, dramatics, publications, and public speaking, further enhance intellectual and emotional growth.
         </p>
       </motion.div>

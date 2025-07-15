@@ -58,15 +58,15 @@ export default function QualityPolicies() {
           variants={fadeLeft}
           className="w-full md:w-1/2 text-left space-y-6 px-6 md:px-12 lg:px-20"
         >
-          <h2 className="text-green-700 text-3xl md:text-4xl font-extrabold uppercase tracking-wide">
+          <h2 className="text-[#77C152] text-3xl md:text-7xl font-extrabold uppercase tracking-wide">
             QUALITY POLICIES
           </h2>
 
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed font-poppins">
             At Shaheen School Riyadh, we are committed to delivering <strong>Total Quality Education (TQE)</strong> that fosters academic excellence, personal growth, and ethical leadership.
           </p>
 
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed font-poppins">
             Guided by the educational values of the Shaheen Group of Institutions, and operating in alignment with the <strong>Ministry of Education, Saudi Arabia</strong> and the <strong>Central Board of Secondary Education (CBSE), India</strong>,
             our mission is to develop confident, responsible, and capable individuals who contribute meaningfully to society.
           </p>

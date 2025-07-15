@@ -58,7 +58,7 @@ const ChairmanMessage = () => {
       </div>
 
       {/* Right Side: Image */}
-      <div className="w-full lg:w-1/3 flex justify-center lg:justify-end mt-12 lg:mt-0">
+      <div className="w-full lg:w-1/3 flex justify-center lg:justify-end sticky top-24 h-fit">
         <img
           src="https://shaheenfoundation.org/wp-content/uploads/2019/01/ds.jpg"
           alt="Chairman"
