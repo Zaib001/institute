@@ -10,7 +10,7 @@ const VisionMission = () => {
     <>
       <section
         ref={ref}
-        className="w-full min-h-screen flex flex-col lg:flex-row items-stretch justify-between bg-white overflow-hidden"
+        className="w-full flex flex-col lg:flex-row items-stretch justify-between bg-white overflow-hidden"
       >
         {/* Left Side: Text */}
         <motion.div
@@ -30,23 +30,21 @@ const VisionMission = () => {
 
           {/* Animated Down Arrows */}
           <motion.div
-            className="flex flex-col items-start gap-2"
+            className="absolute hidden sm:block -bottom-16 left-4 sm:left-6 md:left-10"
             initial={{ opacity: 0, y: -10 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            <div className="absolute bottom-0 left-10 z-30 flex flex-col gap-2">
-              <div className="w-28 h-28 animate-bounce">
-                <img src={arrowImg} alt="Scroll down" className="w-full h-full object-contain" />
-              </div>
-
+            <div className="w-16 sm:w-20 md:w-28 animate-bounce">
+              <img src={arrowImg} alt="Scroll down" className="w-full h-full object-contain" />
             </div>
           </motion.div>
+
         </motion.div>
 
         {/* Right Side: Fullscreen Image */}
         <motion.div
-          className="w-full lg:w-1/2 h-[50vh] lg:h-auto"
+          className="w-full lg:w-1/2 h-[50vh] lg:h-screen"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}

@@ -53,12 +53,13 @@ const TeamBioSection = ({ activeIndex }) => {
   const wavePath = waveStyles[activeIndex];
 
   return (
+    
     <motion.div
       key={activeIndex}
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`relative w-full h-[300px] text-white overflow-hidden ${bgClass} ${padding}`}
+      className={`relative w-full md:h-[300px] text-white overflow-hidden ${bgClass} ${padding}`}
     >
       {/* Top Wave */}
       <svg
@@ -70,7 +71,7 @@ const TeamBioSection = ({ activeIndex }) => {
       </svg>
 
       {/* Text Content */}
-      <div className="relative z-10 mt-8 max-w-7xl mx-auto">
+      <div className="relative z-10 p-24 md:p-10 mt-8 max-w-7xl mx-auto ">
         <h3 className="text-white font-bold text-xl md:text-4xl uppercase">
           {member.name} - {member.role}
         </h3>

@@ -10,11 +10,11 @@ const Vision = () => {
   return (
     <section
       ref={ref}
-      className="relative w-full min-h-screen bg-white flex flex-col lg:flex-row items-center justify-between gap-10 overflow-hidden"
+      className="relative w-full bg-white flex flex-col lg:flex-row items-center justify-between gap-10 overflow-hidden"
     >
       {/* Left Side: Full Image */}
       <motion.div
-        className="w-full lg:w-1/2"
+        className="hidden lg:block w-full lg:w-1/2"
         initial={{ opacity: 0, x: -250 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 1 }}
@@ -26,9 +26,10 @@ const Vision = () => {
         />
       </motion.div>
 
+
       {/* Right Side: Text */}
       <motion.div
-        className="w-full lg:w-1/2 px-6 md:px-12"
+        className="w-full lg:w-1/2 px-6 py-6 md:px-12"
         initial={{ opacity: 0, y: 510 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
@@ -42,15 +43,17 @@ const Vision = () => {
       </motion.div>
 
       {/* Scroll Down Arrow */}
-      <div className="absolute bottom-6 right-10 z-40">
-        <div className="w-12 h-12 md:w-28 md:h-28 animate-bounce">
-          <img
-            src={arrowImg}
-            alt="Scroll down"
-            className="w-full h-full object-contain"
-          />
+      <motion.div
+        className="absolute hidden sm:block bottom-8 right-4 sm:right-6 md:right-10"
+        initial={{ opacity: 0, y: -10 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ delay: 1, duration: 0.6 }}
+      >
+        <div className="w-16 sm:w-20 md:w-28 animate-bounce">
+          <img src={arrowImg} alt="Scroll down" className="w-full h-full object-contain" />
         </div>
-      </div>
+      </motion.div>
+
     </section>
   );
 };

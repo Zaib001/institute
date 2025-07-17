@@ -19,7 +19,6 @@ const ChairmanMessage = () => {
   const index = useTransform(scrollYProgress, [0, 1], [0, chairmanTexts.length - 1]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Update paragraph index on scroll
   useEffect(() => {
     const unsubscribe = index.on('change', (v) => {
       const rounded = Math.round(v);
@@ -27,25 +26,25 @@ const ChairmanMessage = () => {
         setCurrentIndex(rounded);
       }
     });
-    return () => unsubscribe(); // cleanup
+    return () => unsubscribe();
   }, [index, currentIndex]);
 
   return (
     <section
       ref={ref}
-      className="relative w-full min-h-[300vh] bg-[#FAF9EB] px-6 md:px-16 py-20 flex flex-col lg:flex-row items-start justify-between gap-10"
+      className="relative w-full min-h-[300vh] bg-[#FAF9EB] px-4 sm:px-6 md:px-10 lg:px-16 py-16 sm:py-20 flex flex-col lg:flex-row items-start justify-between gap-10"
     >
-      {/* Left Side: Text */}
-      <div className="w-full lg:w-2/3 sticky top-24">
-        <h2 className="text-[#77C152] text-4xl md:text-7xl font-extrabold mb-8">
+      {/* Text Side */}
+      <div className="w-full lg:w-2/3 sticky top-20">
+        <h2 className="text-[#77C152] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 sm:mb-8 leading-tight">
           MESSAGE FROM OUR CHAIRMAN
         </h2>
 
-        <div className="relative min-h-[220px] overflow-hidden">
+        <div className="relative min-h-[280px] sm:min-h-[300px] md:min-h-[220px] overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.p
               key={currentIndex}
-              className="absolute top-0 left-0 w-full text-gray-800 text-lg md:text-xl leading-relaxed font-poppins"
+              className="absolute top-0 left-0 w-full text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed font-poppins pr-2"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
@@ -57,12 +56,12 @@ const ChairmanMessage = () => {
         </div>
       </div>
 
-      {/* Right Side: Image */}
-      <div className="w-full lg:w-1/3 flex justify-center lg:justify-end sticky top-24 h-fit">
+      {/* Image Side */}
+      <div className="w-full lg:w-1/3 flex justify-center lg:justify-end sticky top-48">
         <img
           src="https://shaheenfoundation.org/wp-content/uploads/2019/01/ds.jpg"
           alt="Chairman"
-          className="rounded-lg shadow-lg max-w-xs md:max-w-sm"
+          className="rounded-lg shadow-lg w-40 sm:w-56 md:w-64 lg:w-72 xl:w-80 h-auto"
         />
       </div>
     </section>

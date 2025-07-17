@@ -22,7 +22,6 @@ const ChairmanSection = () => {
   const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0.7, 0.95]);
   const imageScale = useTransform(scrollYProgress, [0, 1], [1.05, 1]);
 
-  // Trigger animations when in view
   useEffect(() => {
     if (imageInView) {
       imageControls.start({ opacity: 1, y: 0 });
@@ -35,7 +34,7 @@ const ChairmanSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen w-full overflow-hidden bg-black snap-start"
+      className="relative h-auto md:h-screen w-full overflow-hidden bg-black snap-start py-16 md:py-0"
     >
       {/* Background GIF */}
       <motion.img
@@ -52,8 +51,8 @@ const ChairmanSection = () => {
       />
 
       {/* Foreground Content */}
-      <div className="relative z-20 h-full flex items-center justify-center px-6 md:px-20">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="relative z-20 h-full flex items-center justify-center px-4 sm:px-8 md:px-20">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
 
           {/* Image */}
           <motion.div
@@ -61,12 +60,12 @@ const ChairmanSection = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={imageControls}
             transition={{ duration: 0.9, ease: 'easeOut' }}
-            className="w-full md:w-1/2 max-w-sm border-l-4 border-green-400 rounded-lg overflow-hidden"
+            className="w-full md:w-1/2 border-l-4 border-green-400 rounded-lg overflow-hidden"
           >
             <img
               src="https://shaheenfoundation.org/wp-content/uploads/2019/01/ds.jpg"
               alt="Chairman"
-              className="w-full h-auto object-cover"
+              className="md:w-[60%] md:h-[60vh] object-cover rounded"
             />
           </motion.div>
 
@@ -76,25 +75,19 @@ const ChairmanSection = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={textControls}
             transition={{ duration: 1, delay: 0.2 }}
-            className="w-full md:w-2/3 text-white font-poppins mb-20"
+            className="w-full md:w-2/3 text-white font-poppins"
           >
-            <p
-              className="leading-9 text-[24px] font-[700] font-poppins"
-            
-            >
+            <p className="leading-relaxed text-lg sm:text-xl md:text-2xl font-semibold">
               This ambitious project, spearheaded by Dr. Abdul Qadeer, Chairman of Shaheen Group of Institutions,
               is set to redefine educational excellence in the region.
             </p>
 
-            <p
-              className="mt-6 leading-9 text-[24px] font-[700]"
-             
-            >
+            <p className="mt-6 leading-relaxed text-lg sm:text-xl md:text-2xl font-semibold">
               Our upcoming school in Riyadh, set to open in August 2025, will offer a comprehensive curriculum
               from Kindergarten through 12th grade, with integrated coaching for NEET, JEE, and CA Foundation.
             </p>
 
-            <button className="mt-6 px-6 py-2 border border-white rounded-full text-sm hover:bg-white hover:text-black transition duration-300">
+            <button className="mt-6 px-6 py-2 border border-white rounded-full text-sm sm:text-base hover:bg-white hover:text-black transition duration-300">
               Learn More →
             </button>
           </motion.div>

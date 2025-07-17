@@ -58,7 +58,7 @@ export default function TeamSection() {
   }, []);
 
   return (
-    <section className="pb-20 bg-[#E7E5DC] h-screen">
+    <section className=" bg-white">
       <h2
         className="text-3xl md:text-7xl font-extrabold mb-10 transition-colors duration-500 w-full py-10 px-6 md:px-16"
         style={{ color: teamMembers[activeIndex].color }}

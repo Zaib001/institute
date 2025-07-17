@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import arrowImg from '../assets/arrow.svg'
+import arrowImg from '../assets/arrow.svg';
+
 const AboutUsHeader = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
@@ -16,19 +17,19 @@ const AboutUsHeader = () => {
   };
 
   return (
-    <section ref={sectionRef} className="bg-white py-20 px-6 md:px-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+    <section ref={sectionRef} className="bg-white py-16 px-4 sm:px-8 md:px-20 overflow-hidden relative">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 relative">
         {/* Text Section */}
         <motion.div
           variants={textVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="flex-1"
+          className="w-full lg:w-1/2"
         >
-          <h2 className="text-[#77C152] text-4xl md:text-[100px] font-extrabold leading-tight">
+          <h2 className="text-[#77C152] text-3xl sm:text-5xl md:text-6xl lg:text-[100px] font-extrabold leading-tight">
             A VISIONARY <br /> INITIATIVE
           </h2>
-          <p className="mt-6 text-gray-800 text-base md:text-[18px] max-w-5xl leading-relaxed font-poppins">
+          <p className="mt-6 text-gray-800 text-base sm:text-lg md:text-[18px] leading-relaxed font-poppins">
             Shaheen Group of Institutions, a renowned name in the field of education, is thrilled to announce
             its expansion into the Kingdom of Saudi Arabia and the Middle East. This ambitious project,
             spearheaded by <strong>Dr. Abdul Qadeer</strong>, Chairman of Shaheen Group of Institutions, is set
@@ -41,22 +42,23 @@ const AboutUsHeader = () => {
           variants={imageVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="flex-1 relative"
+          className="w-full lg:w-1/2 relative flex justify-center"
         >
-          <div className="relative w-full max-w-sm mx-auto">
+          <div className="relative w-64 sm:w-72 md:w-80 lg:w-[340px]">
             <img
               src="https://shaheenfoundation.org/wp-content/uploads/2019/01/ds.jpg"
               alt="Chairman"
               className="rounded-full w-full h-auto z-10 relative"
             />
-            <div className="absolute top-1/2 right-[-20%] transform -translate-y-1/2 w-[180px] h-[180px] bg-green-400 rounded-full z-0"></div>
+            <div className="absolute top-1/2 -right-16 transform -translate-y-1/2 w-40 h-40 sm:w-44 sm:h-44 bg-green-400 rounded-full z-0" />
           </div>
         </motion.div>
-        <div className="absolute -bottom-20 right-20 z-30 flex flex-col gap-2">
-          <div className="w-28 h-28 animate-bounce">
+
+        {/* Arrow */}
+        <div className="absolute -bottom-12 right-6 sm:right-10 md:right-0 z-30">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 animate-bounce">
             <img src={arrowImg} alt="Scroll down" className="w-full h-full object-contain" />
           </div>
-
         </div>
       </div>
     </section>

@@ -32,9 +32,10 @@ export default function WhyShaheen() {
       className="relative w-full bg-[#E7E5DC]"
       style={{ height: `${scrollContent.length * 90}vh` }}
     >
-      <div className="sticky top-0 h-screen flex items-center justify-between overflow-hidden">
+      <div className="sticky top-0 h-screen flex flex-col md:flex-row items-stretch overflow-hidden">
+
         {/* Right: Fixed Video */}
-        <div className="w-full md:w-1/2 h-full sticky top-0">
+        <div className="w-full md:w-1/2 h-64 md:h-full sticky top-0">
           <video
             className="w-full h-full object-cover"
             src={video}
@@ -46,27 +47,28 @@ export default function WhyShaheen() {
         </div>
 
         {/* Left: Scroll-changing Text */}
-        <div className="w-full md:w-1/2 h-full px-6 md:px-16 bg-[#E7E5DC] relative z-10 overflow-hidden">
+        <div className="w-full md:w-1/2 h-full px-4 sm:px-6 md:px-12 lg:px-16 py-10 relative z-10 overflow-hidden bg-[#E7E5DC]">
           <motion.div
             style={{
               y,
               height: `${scrollContent.length * 60}vh`,
               position: 'absolute',
               top: 0,
-              left: 20,
+              left: 0,
               width: '100%',
+              paddingRight: '1rem',
             }}
           >
             {scrollContent.map((item, index) => (
               <div
                 key={index}
-                className="h-screen flex flex-col justify-center gap-4"
+                className="h-screen flex flex-col justify-center gap-4 pr-4"
               >
-                <h2 className="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight mb-4 px-10">
                   {item.heading.map((word, i) => (
                     <span
                       key={i}
-                      className={`mr-2 ${
+                      className={`block sm:inline mr-1 ${
                         word.includes('ACADEMIC') || word.includes('NEP')
                           ? 'text-[#77C152]'
                           : 'text-black'
@@ -76,17 +78,17 @@ export default function WhyShaheen() {
                     </span>
                   ))}
                 </h2>
-                <p className="text-base md:text-lg leading-relaxed text-gray-700 font-poppins max-w-xl">
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-700 font-poppins max-w-xl px-10">
                   {item.description}
                 </p>
 
-                {/* ✅ Arrow only for first item */}
+                {/* Scroll Arrow (only for first item) */}
                 {index === 0 && (
                   <motion.div
                     style={{ opacity: arrowOpacity }}
                     className="absolute bottom-6 left-0"
                   >
-                    <div className="w-10 h-10 md:w-20 md:h-20 animate-bounce">
+                    <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 animate-bounce">
                       <img
                         src={arrowImg}
                         alt="Scroll down"

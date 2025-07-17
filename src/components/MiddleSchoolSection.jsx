@@ -16,9 +16,9 @@ export default function MiddleSchoolSection() {
     hidden: { opacity: 0, y: 50 },
     visible: i => ({
       opacity: 1,
-      y: -100,
-      transition: { delay: i * 0.2, duration: 0.8, ease: 'easeOut' }
-    })
+      y: 0,
+      transition: { delay: i * 0.2, duration: 0.8, ease: 'easeOut' },
+    }),
   };
 
   const imageVariant = {
@@ -27,33 +27,33 @@ export default function MiddleSchoolSection() {
       opacity: 1,
       scale: 1,
       rotate: 0,
-      transition: { duration: 1, ease: 'easeOut' }
-    }
+      transition: { duration: 1, ease: 'easeOut' },
+    },
   };
 
   return (
     <section
       ref={ref}
-      className="w-full  bg-white min-h-screen flex flex-col md:flex-row items-center justify-between gap-8"
+      className="w-full bg-white flex flex-col md:flex-row items-center justify-between gap-8 px-4 sm:px-8 lg:px-16 py-20"
     >
       {/* Left Image */}
       <motion.div
         variants={imageVariant}
         initial="hidden"
         animate={controls}
-        className="w-full h-screen md:w-1/3"
+        className="w-full md:w-1/3 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]"
       >
         <img
           src={imageRight}
           alt="Book and Coffee"
-          className="w-full h-screen rounded-lg shadow-lg"
+          className="w-full h-full object-cover rounded-lg shadow-lg"
         />
       </motion.div>
 
       {/* Center Text */}
-      <div className="w-full md:w-1/2 space-y-5">
+      <div className="w-full md:w-1/2 space-y-6">
         <motion.h2
-          className="text-2xl md:text-6xl font-extrabold"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold"
           variants={textVariant}
           initial="hidden"
           animate={controls}
@@ -63,7 +63,7 @@ export default function MiddleSchoolSection() {
         </motion.h2>
 
         <motion.h3
-          className="text-[#77C152] font-bold text-lg md:text-2xl uppercase"
+          className="text-[#77C152] font-bold text-base sm:text-lg md:text-xl lg:text-2xl uppercase"
           variants={textVariant}
           initial="hidden"
           animate={controls}
@@ -73,27 +73,27 @@ export default function MiddleSchoolSection() {
         </motion.h3>
 
         <motion.p
-          className="text-gray-700 text-base md:text-lg leading-relaxed font-poppins"
+          className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed font-poppins"
           variants={textVariant}
           initial="hidden"
           animate={controls}
           custom={2}
         >
-          Shaheen Schools’ Middle Schools empower students to take ownership of their learning journey...
+          Shaheen Schools’ Middle Schools empower students to take ownership of their learning journey.
           <br /><br />
           By following the <strong>CBSE curriculum</strong> and integrating <strong>National Education Policy</strong>,
-          we provide a comprehensive education...
+          we provide a comprehensive education.
         </motion.p>
 
         <motion.p
-          className="text-gray-700 text-base md:text-lg font-poppins"
+          className="text-gray-700 text-sm sm:text-base md:text-lg font-poppins"
           variants={textVariant}
           initial="hidden"
           animate={controls}
           custom={3}
         >
           Our guidance and support during the Integrated <strong>NEET/JEE/CA Foundation</strong> option process
-          empower students to make informed choices...
+          empower students to make informed choices.
         </motion.p>
       </div>
 
@@ -102,12 +102,12 @@ export default function MiddleSchoolSection() {
         variants={imageVariant}
         initial="hidden"
         animate={controls}
-        className="w-full h-screen md:w-1/3"
+        className="w-full md:w-1/3 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]"
       >
         <img
           src={imageLeft}
           alt="Motivational Poster"
-          className="w-full h-screen rounded-lg shadow-lg"
+          className="w-full h-full object-cover rounded-lg shadow-lg"
         />
       </motion.div>
     </section>

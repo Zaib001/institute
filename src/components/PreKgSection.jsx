@@ -26,7 +26,7 @@ export default function PreKgSection() {
   const textVariants = {
     hidden: { y: 290, opacity: 0, skewY: 5 },
     visible: {
-      y: -100,
+      y: 0,
       opacity: 1,
       skewY: 0,
       transition: { duration: 0.9, ease: 'easeOut', delay: 0.9 },
@@ -36,37 +36,41 @@ export default function PreKgSection() {
   return (
     <section
       ref={ref}
-      className="w-full px-6 md:px-16 py-20 flex flex-col md:flex-row items-center justify-between bg-white min-h-screen overflow-hidden"
+      className="w-full flex flex-col md:flex-row items-center justify-between bg-white min-h-screen px-4 sm:px-6 lg:px-16 py-20 gap-12"
     >
-      {/* Images */}
+      {/* Left: Image */}
       <motion.div
         variants={imageVariants}
         initial="hidden"
         animate={controls}
-        className="flex flex-col items-center gap-6 w-full md:w-[40%]"
+        className="w-full md:w-[45%] flex justify-center"
       >
-        <img src={image1} alt="Crayons" className="w-full" />
+        <img
+          src={image1}
+          alt="Crayons"
+          className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-full h-auto"
+        />
       </motion.div>
 
-      {/* Text */}
+      {/* Right: Text */}
       <motion.div
         variants={textVariants}
         initial="hidden"
         animate={controls}
-        className="w-full md:w-[55%] mt-10 md:mt-0"
+        className="w-full md:w-[55%]"
       >
-        <h2 className="text-3xl md:text-7xl font-extrabold mb-3">
+        <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4">
           <span className="text-black">PRE-KG & KG</span>
         </h2>
-        <h3 className="text-[#77C152] font-bold uppercase text-3xl mb-5">
+        <h3 className="text-[#77C152] font-bold uppercase text-xl sm:text-2xl md:text-3xl mb-6">
           Nursery, LKG and UKG for Boys and Girls aged 4 to 6
         </h3>
-        <p className="text-base md:text-lg leading-relaxed text-gray-700 mb-4 font-poppins">
+        <p className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-700 mb-4 font-poppins">
           Shaheen Schools' Kindergarten program, for children aged 4–6, is designed to nurture young minds
           holistically. Through a play-based, <strong>experiential approach, we foster children’s social,
           emotional, and cognitive development.</strong>
         </p>
-        <p className="text-base md:text-lg leading-relaxed text-gray-700 font-poppins">
+        <p className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-700 font-poppins">
           Our child-centered classrooms provide safe and engaging learning environments that encourage curiosity
           and exploration. By integrating subjects like English, Arabic, Mathematics, Science, Computing, Chinese,
           Art, Music, and Physical Education, we equip students with the

@@ -1,9 +1,25 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import hero from "../assets/hero.mp4";
 
 const HeroSection = () => {
   const sectionRef = useRef(null);
+  const headingRef = useRef(null);
+  const textRef = useRef(null);
+  const btnRef = useRef(null);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile screen on mount and resize
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
@@ -14,17 +30,13 @@ const HeroSection = () => {
   const contentOpacity = useTransform(scrollYProgress, [0.4, 1], [1, 0]);
   const videoOpacity = useTransform(scrollYProgress, [0, 1], [1, 0.2]);
 
-  const headingRef = useRef(null);
-  const textRef = useRef(null);
-  const btnRef = useRef(null);
-
   const headingInView = useInView(headingRef, { once: true, margin: "-100px" });
   const textInView = useInView(textRef, { once: true, margin: "-100px" });
   const btnInView = useInView(btnRef, { once: true, margin: "-100px" });
 
   return (
-    <section 
-      ref={sectionRef} 
+    <section
+      ref={sectionRef}
       className="w-full h-screen min-h-[600px] max-h-[1200px] relative overflow-hidden"
     >
       {/* Background Video */}
@@ -41,13 +53,13 @@ const HeroSection = () => {
       {/* Full dark overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10" />
 
-      {/* Scroll-expanding overlay */}
+      {/* Overlay (animated on desktop, full on mobile) */}
       <motion.div
-        style={{ clipPath }}
+        style={{ clipPath: isMobile ? "inset(0 0% 0 0)" : clipPath }}
         className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 z-20 flex items-center px-4 sm:px-6 md:px-10 lg:px-20 py-10"
       >
         <motion.div
-          style={{ y: contentY, opacity: contentOpacity }}
+          style={!isMobile ? { y: contentY, opacity: contentOpacity } : {}}
           className="max-w-4xl w-full"
         >
           <motion.h1
