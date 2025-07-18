@@ -20,19 +20,18 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">{t('footer.sitemap.title')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">{t('footer.sitemap.links.home')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.sitemap.links.about')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.sitemap.links.services')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.sitemap.links.courses')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.sitemap.links.curriculum')}</a></li>
-              <li><a href="#" className="hover:underline">{t('footer.sitemap.links.contact_us')}</a></li>
+              <li><a href="/" className="hover:underline">Home</a></li>
+              <li><a href="/about" className="hover:underline">About Shaheen</a></li>
+              <li><a href="/contact" className="hover:underline">Contact Us</a></li>
+              <li><a href="/admission" className="hover:underline">Admission form</a></li>
+              <li><a href="/jobs" className="hover:underline">Job Application</a></li>
             </ul>
           </div>
 
           {/* Newsletter Subscription */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">{t('footer.newsletter.title')}</h3>
-            <p className="mb-4">{t('footer.newsletter.description')}</p>
+            <h3 className="text-xl font-semibold mb-4">Stay in Touch</h3>
+            <p className="mb-4">To join our newsletter sign up below</p>
             <form className="flex flex-col space-y-4">
               <input
                 type="email"
