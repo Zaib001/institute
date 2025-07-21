@@ -27,6 +27,8 @@ import WhyShaheenPage from './pages/WhyShneenPage';
 import AcademicCurriculumPage from './pages/AcademicCurriculumPage';
 import AdmissionsSectionPage from './pages/AdmissionsSectionPage';
 import ParentsPortalPage from './pages/ParentsPortalPage';
+import Jobs from './pages/Jobs';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   const location = useLocation();
@@ -77,6 +79,7 @@ function App() {
           <Route path="/message" element={<ChairmanMessage />} />
           <Route path="/vision" element={<VisionPage />} />
           <Route path="/team" element={<TeamSection />} />
+          <Route path="/jobs" element={<Jobs />} />
           <Route path="/learning" element={<LearningPath />} />
           <Route path="/Why Shaheen" element={<WhyShaheenPage />} />
           <Route path="/quality" element={<QualityPage />} />
@@ -88,6 +91,7 @@ function App() {
           <Route path="/contact_us" element={<ContactUsPage />} />
           <Route path="/curriculum" element={<CurriculumSection />} />
           <Route path="/courses/:id" element={<CourseDetailsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
       {shouldShowNavbarAndFooter && <CTAWithFooter />}

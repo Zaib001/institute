@@ -1,4 +1,4 @@
-// sectionsData.js
+// sectionsData.js (updated with more image options)
 import img from '../assets/Group 118.svg';
 import img1 from '../assets/Group 118 (1).svg';
 import img2 from '../assets/Group 118 (2).svg';
@@ -11,53 +11,60 @@ import img7 from '../assets/Group 118 (7).svg';
 const sectionsData = [
   {
     title: "Linguistic",
-    description: `To develop students’ communication skills and increase their command of language. This is developed through **English (Language and Literature)** and at least two additional languages (Hindi, French, Malayalam, Tamil, Telugu, Urdu, Marathi and Arabic).`,
+    description: `To develop students' communication skills and increase their command of language. This is developed through <strong>English (Language and Literature)</strong> and at least two additional languages (Hindi, French, Malayalam, Tamil, Telugu, Urdu, Marathi and Arabic).`,
     image: img,
-    animation: "fade-left",
+    bgColor: "from-emerald-100 to-teal-100",
+    iconColor: "text-emerald-500",
   },
   {
     title: "Mathematical",
     description: `Developing logical thinking and problem-solving through arithmetic, geometry, and applied math in real-world contexts.`,
     image: img1,
-    animation: "fade-right",
+    bgColor: "from-blue-100 to-indigo-100",
+    iconColor: "text-blue-500",
   },
- 
   {
     title: "Scientific",
-    description: `To develop students’ scientific skills, knowledge and understanding. This is developed through science`,
+    description: `To develop students' scientific skills, knowledge and understanding. This is developed through science`,
     image: img2,
-    animation: "fade-right",
+    bgColor: "from-purple-100 to-violet-100",
+    iconColor: "text-purple-500",
   },
   {
     title: "Human and social",
-    description: `To develop students’ scientific skills, knowledge and understanding. This is developed through science`,
+    description: `Understanding human behavior, societies, and cultures through history, geography, and social studies.`,
     image: img3,
-    animation: "fade-right",
+    bgColor: "from-amber-100 to-orange-100",
+    iconColor: "text-amber-500",
   },
   {
     title: "Physical",
-    description: `To teach the basic principles of fitness and health and to develop students’ physical control and coordination. This is developed through Games and Physical Education.`,
+    description: `To teach the basic principles of fitness and health and to develop students' physical control and coordination. This is developed through Games and Physical Education.`,
     image: img4,
-    animation: "fade-right",
+    bgColor: "from-red-100 to-pink-100",
+    iconColor: "text-red-500",
   },
   {
     title: "Creative",
-    description: `To develop students’ aesthetic and creative skills through Arts.`,
+    description: `To develop students' aesthetic and creative skills through Arts.`,
     image: img5,
-    animation: "fade-right",
+    bgColor: "from-fuchsia-100 to-pink-100",
+    iconColor: "text-fuchsia-500",
   },
   {
     title: "Spiritual & Moral Values",
-    description: `To develop students’ self knowledge, self-esteem and self-confidence so that they can distinguish right from wrong and respect the law as well as accept responsibility for their behavior, show initiative and understand how they can contribute to community life. This is developed through Islamic Studies and Moral Science.`,
+    description: `To develop students' self knowledge, self-esteem and self-confidence so that they can distinguish right from wrong and respect the law as well as accept responsibility for their behavior, show initiative and understand how they can contribute to community life. This is developed through Islamic Studies and Moral Science.`,
     image: img6,
-    animation: "fade-right",
+    bgColor: "from-indigo-100 to-blue-100",
+    iconColor: "text-indigo-500",
   },
   {
     title: "Robotics & AI",
     description: `To enhance the most happening skills like Robotics and AI with excellence.`,
     image: img7,
-    animation: "fade-right",
+    bgColor: "from-cyan-100 to-teal-100",
+    iconColor: "text-cyan-500",
   },
-  // ...6 more objects
 ];
+
 export default sectionsData;
