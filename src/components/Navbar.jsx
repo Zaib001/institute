@@ -68,7 +68,8 @@ const Navbar = () => {
                 label: "Admissions",
                 id: "admission",
                 links: [
-                  { to: "/admission", text: "Admission Form" }
+                  { to: "/admission", text: "Admission Details" },
+                  { to: "/admissionform", text: "Admission Form" }
                 ]
               },
               {
@@ -78,7 +79,6 @@ const Navbar = () => {
                   { to: "/contact", text: "Contact" },
                   { to: "/jobs", text: "Job Applications" },
                   { to: "/community", text: "Join Community" },
-                  { to: "/news", text: "News & Events" },
                   { to: "/parents", text: "Parents" }
                 ]
               }
@@ -137,7 +137,8 @@ const Navbar = () => {
       <div>
         <p className="text-green-400 uppercase text-sm mb-2 tracking-wide">Admissions</p>
         <div className="space-y-2">
-          <Link to="/admission" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Admission Form</Link>
+          <Link to="/admission" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Admission Details</Link>
+          <Link to="/admissionform" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Admission Form</Link>
         </div>
       </div>
 

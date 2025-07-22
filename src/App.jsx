@@ -29,6 +29,8 @@ import AdmissionsSectionPage from './pages/AdmissionsSectionPage';
 import ParentsPortalPage from './pages/ParentsPortalPage';
 import Jobs from './pages/Jobs';
 import NotFoundPage from './pages/NotFoundPage';
+import AdmissionPage from './pages/AdmissionPage';
+import ContactPage from './components/ContactPage';
 
 function App() {
   const location = useLocation();
@@ -78,7 +80,9 @@ function App() {
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/message" element={<ChairmanMessage />} />
           <Route path="/vision" element={<VisionPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/team" element={<TeamSection />} />
+          <Route path="/admissionform" element={<AdmissionPage />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/learning" element={<LearningPath />} />
           <Route path="/Why Shaheen" element={<WhyShaheenPage />} />
