@@ -103,67 +103,67 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-       <AnimatePresence>
-  {isMobileMenuOpen && (
-    <motion.div
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
-      className="md:hidden mt-4 bg-black text-white font-medium text-base space-y-6 px-6 py-6 rounded-lg shadow-xl"
-    >
-      {/* Section: About Shaheen */}
-      <div>
-        <p className="text-green-400 uppercase text-sm mb-2 tracking-wide">About Shaheen</p>
-        <div className="space-y-2">
-          <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">About Shaheen</Link>
-          <Link to="/message" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Chairman's Message</Link>
-          <Link to="/vision" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Vision & Mission</Link>
-          <Link to="/team" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Leadership & Governance</Link>
-        </div>
-      </div>
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="md:hidden mt-4 bg-black text-white font-medium text-base space-y-6 px-6 py-6 rounded-lg shadow-xl"
+            >
+              {/* Section: About Shaheen */}
+              <div>
+                <p className="text-green-400 uppercase text-sm mb-2 tracking-wide">About Shaheen</p>
+                <div className="space-y-2">
+                  <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">About Shaheen</Link>
+                  <Link to="/message" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Chairman's Message</Link>
+                  <Link to="/vision" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Vision & Mission</Link>
+                  <Link to="/team" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Leadership & Governance</Link>
+                </div>
+              </div>
 
-      {/* Section: Shaheen Learning Path */}
-      <div>
-        <p className="text-green-400 uppercase text-sm mb-2 tracking-wide">Learning Path</p>
-        <div className="space-y-2">
-          <Link to="/Why Shaheen" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Why Shaheen</Link>
-          <Link to="/quality" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Quality Policy</Link>
-          <Link to="/acdemic" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Academic Curriculum</Link>
-          <Link to="/learning" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Learning at Shaheen School</Link>
-        </div>
-      </div>
+              {/* Section: Shaheen Learning Path */}
+              <div>
+                <p className="text-green-400 uppercase text-sm mb-2 tracking-wide">Learning Path</p>
+                <div className="space-y-2">
+                  <Link to="/Why Shaheen" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Why Shaheen</Link>
+                  <Link to="/quality" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Quality Policy</Link>
+                  <Link to="/acdemic" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Academic Curriculum</Link>
+                  <Link to="/learning" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Learning at Shaheen School</Link>
+                </div>
+              </div>
 
-      {/* Section: Admissions */}
-      <div>
-        <p className="text-green-400 uppercase text-sm mb-2 tracking-wide">Admissions</p>
-        <div className="space-y-2">
-          <Link to="/admission" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Admission Details</Link>
-          <Link to="/admissionform" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Admission Form</Link>
-        </div>
-      </div>
+              {/* Section: Admissions */}
+              <div>
+                <p className="text-green-400 uppercase text-sm mb-2 tracking-wide">Admissions</p>
+                <div className="space-y-2">
+                  <Link to="/admission" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Admission Details</Link>
+                  <Link to="/admissionform" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Admission Form</Link>
+                </div>
+              </div>
 
-      {/* Section: More */}
-      <div>
-        <p className="text-green-400 uppercase text-sm mb-2 tracking-wide">More</p>
-        <div className="space-y-2">
-          <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Contact</Link>
-          <Link to="/jobs" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Job Applications</Link>
-          <Link to="/community" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Join Community</Link>
-          <Link to="/news" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">News & Events</Link>
-          <Link to="/parents" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Parents</Link>
-        </div>
-      </div>
+              {/* Section: More */}
+              <div>
+                <p className="text-green-400 uppercase text-sm mb-2 tracking-wide">More</p>
+                <div className="space-y-2">
+                  <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Contact</Link>
+                  <Link to="/jobs" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Job Applications</Link>
+                  <Link to="/community" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Join Community</Link>
+                  <Link to="/news" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">News & Events</Link>
+                  <Link to="/parents" onClick={() => setIsMobileMenuOpen(false)} className="block px-2 py-1 hover:bg-gray-800 rounded">Parents</Link>
+                </div>
+              </div>
 
-      {/* Login */}
-      <div className="pt-4 border-t border-gray-700">
-        <div className="flex items-center space-x-2 mt-4">
-          <FaUserCircle size={20} />
-          <Link to="/login" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-green-500">Log In</Link>
-        </div>
-      </div>
-    </motion.div>
-  )}
-</AnimatePresence>
+              {/* Login */}
+              <div className="pt-4 border-t border-gray-700">
+                <div className="flex items-center space-x-2 mt-4">
+                  <FaUserCircle size={20} />
+                  <Link to="/login" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-green-500">Log In</Link>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
       </nav>
     </>

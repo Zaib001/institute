@@ -31,6 +31,8 @@ import Jobs from './pages/Jobs';
 import NotFoundPage from './pages/NotFoundPage';
 import AdmissionPage from './pages/AdmissionPage';
 import ContactPage from './components/ContactPage';
+import JobApplication from './pages/JobApplications';
+import Community from './pages/community';
 
 function App() {
   const location = useLocation();
@@ -80,10 +82,10 @@ function App() {
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/message" element={<ChairmanMessage />} />
           <Route path="/vision" element={<VisionPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/jobs" element={<JobApplication />} />
+          <Route path="/community" element={<Community />} />
           <Route path="/team" element={<TeamSection />} />
           <Route path="/admissionform" element={<AdmissionPage />} />
-          <Route path="/jobs" element={<Jobs />} />
           <Route path="/learning" element={<LearningPath />} />
           <Route path="/Why Shaheen" element={<WhyShaheenPage />} />
           <Route path="/quality" element={<QualityPage />} />
